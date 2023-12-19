@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피드-전체 / 밀리의서재</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/default.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="fixed-top">
+            <h1 class="logo">
+                <img src="images/img_logo.png" alt="millie">
+            </h1>
+            <h2 class="none">상단메뉴</h2>
+            <nav class="header__top  none">
+                <ul class="header__nav__btn">
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html">NOW</a></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/story.html">스토리</a></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/millie-road-recomand.html" class="header__nav__btn--active">밀리로드</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="header-bottom fixed-bottom">
+            <ul class="nav-buttom">
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html" class="btn-today ">투데이</a><span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html" class="brn-feed nav-buttom--active">피드</a><span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/search.html" class="btn-search">검색</a><span class="link"></span></li>
+                <li><a href="" class="btn-mylibrary">내서재</a></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/account-management.html" class="btn-management">관리<span class="link"></span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="hide">추천</h2>
+            <div class="category-btn-type4 mobile-space mt48 ">
+                <ul>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html" class="active">
+                            추천
+                        </a><span class="link"></span></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-following.html">
+                            팔로잉
+                        </a><span class="link"></span></li>
+                </ul>
+                <button class="btn-write"><span class="hide">글쓰기</span></button>
+            </div>
+        </section>
+        <section class="mobile-space">
+            <h2 class="hide">전체게시물</h2>
+            <div class="category-btn-type3 mt34">
+                <ul>
+                    <li><span class="link"></span><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html" class="select">전체</a></li>
+                    <li><a href="#none">포스트</a></li>
+                    <li><a href="#none">한 줄 리뷰</a></li>
+                    <li><span class="link"></span><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-highlight.html">하이라이트</a></li>
+                </ul>
+            </div>
+            <div class="feed-all mt15">
+                <ul>
+                    <li class="card-list-type12">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <button class="btn_more-menu"><span class="hide">옵션더보기</span></button>
+                        </div>
+                        <div class="middle-content">
+                            <div class="user-comment">
+                                <p>사회구조적 문제, 육아의 고단함,휴대 <br>폰중독 등으로 오는 번아웃을 이겨내<br>기위한 자존감 확립</p>
+                            </div>
+                            <div class="book-info">
+                                <p class="book-title">요즘 애들</p>
+                                <p class="book-writer">엔 헬렌 피터슨</p>
+                            </div>
+                        </div>
+                        <div class="bottom-bar">
+                            <p>이 한 줄 리뷰가 마음에 드시나요?</p>
+                            <div>
+                                <button class="btn_add-book">담기</button>
+                                <button class="btn_like">0</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-list-type12">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <button class="btn_more-menu"><span class="hide">옵션더보기</span></button>
+                        </div>
+                        <div class="middle-content">
+                            <div class="user-comment">
+                                <p>사회구조적 문제, 육아의 고단함,휴대 <br>폰중독 등으로 오는 번아웃을 이겨내<br>기위한 자존감 확립</p>
+                            </div>
+                            <div class="book-info">
+                                <p class="book-title">요즘 애들</p>
+                                <p class="book-writer">엔 헬렌 피터슨</p>
+                            </div>
+                        </div>
+                        <div class="bottom-bar">
+                            <p>이 한 줄 리뷰가 마음에 드시나요?</p>
+                            <div>
+                                <button class="btn_add-book">담기</button>
+                                <button class="btn_like">0</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-list-type12">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <button class="btn_more-menu"><span class="hide">옵션더보기</span></button>
+                        </div>
+                        <div class="middle-content">
+                            <div class="user-comment">
+                                <p>사회구조적 문제, 육아의 고단함,휴대 <br>폰중독 등으로 오는 번아웃을 이겨내<br>기위한 자존감 확립</p>
+                            </div>
+                            <div class="book-info">
+                                <p class="book-title">요즘 애들</p>
+                                <p class="book-writer">엔 헬렌 피터슨</p>
+                            </div>
+                        </div>
+                        <div class="bottom-bar">
+                            <p>이 한 줄 리뷰가 마음에 드시나요?</p>
+                            <div>
+                                <button class="btn_add-book">담기</button>
+                                <button class="btn_like">0</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-list-type13">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <button class="btn_more-menu"><span class="hide">옵션더보기</span></button>
+                        </div>
+                        <div class="middle-content">
+                            <div class="bg-box">
+                            </div>
+                            <div class="book-comment txt-center">
+                                <div></div>
+                                <p class="book-title">주식 매매하는 법</p>
+                                <p>제시리버모어 지음, 박성환 옮김</p>
+                                <p>"하지만 나는 거래할 때 오랜 기간동안의" <br>내 자신의 경험을 따라야만 한다네.</p>
+                            </div>
+                        </div>
+                        <div class="bottom-bar">
+                            <p>이 한 줄 리뷰가 마음에 드시나요?</p>
+                            <div>
+                                <button class="btn_add-book">담기</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="mobile-space">
+            <div class="title-link title-link__type2">
+                <a href="#none">
+                    <h2>밀리로드</h2>
+                    <p>내 픽은 밀어주고 내 글은 책이 되고밀어주고</p>
+                </a>
+            </div>
+            <div class="card-list-type14">
+                <div class="swiper follow-feed ">
+                    <ul class="swiper-wrapper align">
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?<span class="hide">자세히보기</span></p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ<span class="hide">자세히보기</span></p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?</p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ</p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?<span class="hide">자세히보기</span></p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ<span class="hide">자세히보기</span></p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?</p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ</p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </section>
+        <section class="mobile-space" style="margin-bottom: 7rem;">
+            <div class="title-link title-link__type2">
+                <a href="#none">
+                    <h2>밀리로드</h2>
+                    <p>내 픽은 밀어주고 내 글은 책이 되고밀어주고</p>
+                </a>
+            </div>
+            <div class="card-list-type14">
+                <div class="swiper follow-feed ">
+                    <ul class="swiper-wrapper align">
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?<span class="hide">자세히보기</span></p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ<span class="hide">자세히보기</span></p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?</p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ</p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?<span class="hide">자세히보기</span></p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ<span class="hide">자세히보기</span></p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?</p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ</p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

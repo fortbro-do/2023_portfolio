@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밀리의서재</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/default.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="fixed-top">
+            <h1 class="logo">
+                <img src="images/img_logo.png" alt="millie">
+            </h1>
+            <h2 class="hide">상단메뉴</h2>
+            <nav class="header__top">
+                <ul class="header__nav__btn">
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html" class="header__nav__btn--active">NOW</a>
+                    <span class="link"></span>
+                    </li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/story.html">스토리</a>
+                    <span class="link"></span>
+                    </li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/millie-road-recomand.html">밀리로드</a>
+                    <span class="link"></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h2 class="hide">하단메뉴</h2>
+        <nav class="header-bottom fixed-bottom">
+            <ul class="nav-buttom">
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html" class="btn-today nav-buttom--active">투데이</a>
+                <span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html" class="brn-feed">피드</a>
+                <span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/search.html" class="btn-search">검색</a>
+                <span class="link"></span></li>
+                <li><a href="#none" class="btn-mylibrary">내서재</a></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/account-management.html" class="btn-management">관리</a>
+                <span class="link"></span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="hide">메인배너</h2>
+            <div class="relative">
+                <div class="swiper  story-banner">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#none" class="banner-link">
+                                <div class="banner">
+                                    <div>
+                                        <div>
+                                            <span class="sticker">HOT</span>
+                                            <p class="banner-txt">당신의 감성을 든든하게 채워줄<br>갓 구운 오브제북&lt;빵과 시&gt;
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#none" class="banner-link">
+                                <div class="banner">
+                                    <div>
+                                        <div>
+                                            <span class="sticker">HOT</span>
+                                            <p class="banner-txt">당신의 감성을 든든하게 채워줄<br>갓 구운 오브제북&lt;빵과 시&gt;
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#none" class="banner-link">
+                                <div class="banner">
+                                    <div>
+                                        <div>
+                                            <span class="sticker">HOT</span>
+                                            <p class="banner-txt">당신의 감성을 든든하게 채워줄<br>갓 구운 오브제북&lt;빵과 시&gt;
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#none" class="banner-link">
+                                <div class="banner">
+                                    <div>
+                                        <div>
+                                            <span class="sticker">HOT</span>
+                                            <p class="banner-txt">당신의 감성을 든든하게 채워줄<br>갓 구운 오브제북&lt;빵과 시&gt;
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="banner__control-box">
+                        <div class="banner__play-bar">
+                            <div class="autoplay-progress">
+                                <svg viewBox="0 0 100 10">
+                                    <line x1="0" y1="0" x2="100" y2="0">
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="banner__btn-box">
+                            <div class="swiper-pagination banner__num">
+                             
+                            </div>
+                            <button class="btn-play"><span class="hide">재생</span>
+                                <span class="link"></span></button>
+                            <button class="btn-pause "><span class="hide">정지</span>
+                                <span class="link"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="index">
+            <div class="mobile-space">
+                <section>
+                    <div class="title-link">
+                        <a href="http://doyoung.dothome.co.kr/010%20mobileapp/my-clip.html">
+                            <h2>MY클립</h2><span> <span class="hide">자세히보기</span></span>
+                            <span class="link"></span>
+                            <p class="mt9"></p>
+                        </a>
+                    </div>
+                    <nav class="my-clip">
+                        <ul>
+                            <li>
+                                <a href="#none">
+                                    <div class="my-clip__ico1">
+                                        <span class="alarm">10+</span>
+                                    </div>
+                                    <p>알림센터</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <div class="my-clip__ico2">
+                                    </div>
+                                    <p>오디오북 + 챗북</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <div class="my-clip__ico3">
+                                    </div>
+                                    <p>서점 베스트</p>
+                                </a>
+                            </li>
+                            <li class="hide">
+                                <a href="#none">
+                                    <div class="my-clip__ico4">
+                                    </div>
+                                    <p>밀리의 발견</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <section>
+            <div class="mobile-space">
+                <div>
+                    <div class="title-link">
+                        <a href="http://doyoung.dothome.co.kr/010%20mobileapp/millie-road-recomand.html">
+                            <h2>밀리로드</h2><span> <span class="hide">자세히보기</span></span>
+                            <span class="link"></span>
+                            <p class="mt9">내 픽은 밀어주고 내 글은 책이 되고밀어주고</p>
+                        </a>
+                    </div>
+                    <div class="card-list-type1 mt15">
+                        <div class="swiper millie-road">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#none" class="card-list-type1__cover">
+                                        <span class="title-img"></span>
+                                        <div class="copy">
+                                            <b>
+                                                작가가 괴는 가장 빠른 길! <br>
+                                                내일의 베스트셀러를 만나다.
+                                            </b>
+                                            <p class="view-more">작품 둘러보기</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card-list-type2">
+                                        <ul>
+                                            <li>
+                                                <a href="#none">
+                                                    <div class="card-list-type2__bg-box">
+                                                        <div class="card-list-type2__bg1"></div>
+                                                        <div class="card-list-type2__img1"></div>
+                                                    </div>
+                                                    <div class="card-list-type2__txt-box">
+                                                        <div class="txt-box__info">
+                                                            <div>
+                                                                <span>연재</span>
+                                                                <span>총 8화</span>
+                                                                <span class="yellow-box"><b>42명</b>이 밀어줌</span>
+                                                            </div>
+                                                            <p class="txt-type1 mt9">
+                                                                지금 귀여운 우주에 있어
+                                                            </p>
+                                                            <p class="txt-type2 mt12">하수정</p>
+                                                        </div>
+                                                        <div class="card-list-type2__point txt-type3 mt18">
+                                                            <p class="mt18">추천 포인트</p>
+                                                            <ul class="mt11">
+                                                                <li>텍스트</li>
+                                                                <li>텍스트</li>
+                                                                <li>텍스트</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card-list-type2">
+                                        <ul>
+                                            <li>
+                                                <a href="#none">
+                                                    <div class="card-list-type2__bg-box">
+                                                        <div class="card-list-type2__bg1"></div>
+                                                        <div class="card-list-type2__img1"></div>
+                                                    </div>
+                                                    <div class="card-list-type2__txt-box">
+                                                        <div class="txt-box__info">
+                                                            <div>
+                                                                <span>연재</span>
+                                                                <span>총 8화</span>
+                                                                <span class="yellow-box"><b>42명</b>이 밀어줌</span>
+                                                            </div>
+                                                            <p class="txt-type1 mt9">
+                                                                지금 귀여운 우주에 있어
+                                                            </p>
+                                                            <p class="txt-type2 mt12">하수정</p>
+                                                        </div>
+                                                        <div class="card-list-type2__point txt-type3 mt18">
+                                                            <p class="mt18">추천 포인트</p>
+                                                            <ul class="mt11">
+                                                                <li>텍스트</li>
+                                                                <li>텍스트</li>
+                                                                <li>텍스트</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="card-list-type2">
+                                        <ul>
+                                            <li>
+                                                <a href="#none">
+                                                    <div class="card-list-type2__bg-box">
+                                                        <div class="card-list-type2__bg1"></div>
+                                                        <div class="card-list-type2__img1"></div>
+                                                    </div>
+                                                    <div class="card-list-type2__txt-box">
+                                                        <div class="txt-box__info">
+                                                            <div>
+                                                                <span>연재</span>
+                                                                <span>총 8화</span>
+                                                                <span class="yellow-box"><b>42명</b>이 밀어줌</span>
+                                                            </div>
+                                                            <p class="txt-type1 mt9">
+                                                                지금 귀여운 우주에 있어
+                                                            </p>
+                                                            <p class="txt-type2 mt12">하수정</p>
+                                                        </div>
+                                                        <div class="card-list-type2__point txt-type3 mt18">
+                                                            <p class="mt18">추천 포인트</p>
+                                                            <ul class="mt11">
+                                                                <li>텍스트</li>
+                                                                <li>텍스트</li>
+                                                                <li>텍스트</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mobile-space">
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>내 공간을 채워주는 오브제북 <span class="hide">자세히보기</span></h2>
+                        <p class="mt9">영상으로 책의 감성을 오롯이 느껴보세요</p>
+                    </a>
+                </div>
+                <div class="card-list-type5 mt16">
+                    <a href="#none">
+                        <div class="objetbook">
+                            <div></div>
+                            <p class="objet-title">빌딩과 시</p>
+                            <p class="objet-sub">사랑은 오직 이 속에만 담긴 것처럼</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="ad-banner mt65">
+                    <a href="#none">
+                        <div class="ad-box">
+                            <p class="ad-title">'떠남'을 주제로 한 <br> 독립출판물 5권</p>
+                            <p class="ad-sub mt11">나만 알고 싶은 특별한 책이 가득!</p>
+                        </div>
+                        <span><strong>1</strong>/ 4</span>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>이번 주 주목할 책 <span class="hide">자세히보기</span></h2>
+                        <p class="mt9"></p>
+                    </a>
+                </div>
+
+                <ul class="card-list-type4">
+                    <li>
+                        <a href="#none">
+                            <h3>[독점] 토핑 이유식의 A to Z!</h3>
+                            <div class="book-img"></div>
+                            <div class="card-info txt-center">
+                                <p>육아 인플루언서 율마 <br>
+                                    이유신 레시피북을 한 권에 담았다!
+                                </p>
+                                <ul class="hashtag-type1">
+                                    <li>육아</li>
+                                    <li>이유식</li>
+                                    <li>레시피북</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn mt16">
+                    <button class="btn-alarm">독서 루틴 알람 만들기</button>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>밀리의 발견</h2>
+                        <p class="mt9">회원들의 재미있는 일상 속 책 추천</p>
+                    </a>
+                </div>
+                <div class="card-list-type6">
+                    <a href="#none">
+                        <div class="writer-profile align vm">
+                            <span></span>
+                            <div>
+                                <p class="name">박원빈</p>
+                                <p>#환승연애 #감성일기</p>
+                            </div>
+                        </div>
+                        <div class="card-list-type6__img"><span class="hide">박원빈의 1주 1책 "나는 왜 말을 잘하지 못할까?" 불편한 사람과도 쉽게
+                                대화하는법</span></div>
+                    </a>
+                    <div class="recommand">
+                        <p class="txt-center">이번 주엔 이 책을 함께 읽어요</p>
+                    </div>
+                    <button class="btn_other-view"><span class="hide">펼쳐보기</span></button>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>지금! 서점 베스트 <b>2023.06.13 기준</b></h2>
+                        <p class="mt9">서점 3사 100위 내, 75권을 밀리에서 만나보세요</p>
+                    </a>
+                </div>
+                <div class="card-list-type7">
+                    <div class="swiper book-rank-slide mt15">
+                        <ol class=" swiper-wrapper book-rank ">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-rank__thumb1"></div>
+                                    <div class="book-rank__info">
+                                        <p class="rank">1</p>
+                                        <div>
+                                            <p class="book-rank__book-title1">세이노의 가르침</p>
+                                            <p class="book-rank__writer1">세이노</p>
+                                        </div>
+                                    </div>
+                                    <div class="book-rank__detail-view">
+                                        <div>
+                                            <p class="txt-center">프랑스 현지 언론이 철학을 극찬하다!</p>
+                                            <p class="txt-center">바다를 통해 바라본 우리의 삶</p>
+                                            <div class="detail-view__img"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="book-rank__btn-detail"><span class="hide">펼쳐보기</span>   <span class="click"></span></button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-rank__thumb1"></div>
+                                    <div class="book-rank__info">
+                                        <p class="rank">2</p>
+                                        <div>
+                                            <p class="book-rank__book-title1">세이노의 가르침</p>
+                                            <p class="book-rank__writer1">세이노</p>
+                                        </div>
+                                    </div>
+                                    <div class="book-rank__detail-view">
+                                        <div>
+                                            <p class="txt-center">프랑스 현지 언론이 철학을 극찬하다!</p>
+                                            <p class="txt-center">바다를 통해 바라본 우리의 삶</p>
+                                            <div class="detail-view__img"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="book-rank__btn-detail"><span class="hide">펼쳐보기</span>
+                                 <span class="click"></span>
+                                </button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-rank__thumb1"></div>
+                                    <div class="book-rank__info">
+                                        <p class="rank">3</p>
+                                        <div>
+                                            <p class="book-rank__book-title1">모든 삶은 흐른다</p>
+                                            <p class="book-rank__writer1">세이노</p>
+                                        </div>
+                                    </div>
+                                    <div class="book-rank__detail-view">
+                                        <div>
+                                            <p class="txt-center">프랑스 현지 언론이 철학을 극찬하다!</p>
+                                            <p class="txt-center">바다를 통해 바라본 우리의 삶</p>
+                                            <div class="detail-view__img"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="book-rank__btn-detail "><span class="hide">펼쳐보기</span>
+                                 <span class="click"></span>
+                                </button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-rank__thumb1"></div>
+                                    <div class="book-rank__info">
+                                        <p class="rank">4</p>
+                                        <div>
+                                            <p class="book-rank__book-title1">모든 삶은 흐른다</p>
+                                            <p class="book-rank__writer1">세이노</p>
+                                        </div>
+                                    </div>
+                                    <div class="book-rank__detail-view">
+                                        <div>
+                                            <p class="txt-center">프랑스 현지 언론이 철학을 극찬하다!</p>
+                                            <p class="txt-center">바다를 통해 바라본 우리의 삶</p>
+                                            <div class="detail-view__img"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="book-rank__btn-detail "><span class="hide">펼쳐보기</span>
+                                 <span class="click"></span>
+                                </button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-rank__thumb1"></div>
+                                    <div class="book-rank__info">
+                                        <p class="rank">5</p>
+                                        <div>
+                                            <p class="book-rank__book-title1">모든 삶은 흐른다</p>
+                                            <p class="book-rank__writer1">세이노</p>
+                                        </div>
+                                    </div>
+                                    <div class="book-rank__detail-view">
+                                        <div>
+                                            <p class="txt-center">프랑스 현지 언론이 철학을 극찬하다!</p>
+                                            <p class="txt-center">바다를 통해 바라본 우리의 삶</p>
+                                            <div class="detail-view__img"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="book-rank__btn-detail "><span class="hide">펼쳐보기</span>
+                                 <span class="click"></span>
+                                </button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>밀리가 추천하는 콘텐츠<span class="hide">자세히보기</span></h2>
+                        <p class="mt9"></p>
+                    </a>
+                </div>
+                <div class="card-list-type11 mt15">
+                    <div class="swiper content-slide2">
+                        <ul class=" swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="card-list-type11__img"></div>
+                                    <div class="card-list-type11__txt">
+                                        <div>
+                                            <p class="series-name">히가시노 게이고 설산 시리즈</p>
+                                            <p class="series-copy">밀리의 서재의 인기 검색어에 한결같이 오르는 작가 가가ㅏ가가</p>
+                                        </div>
+                                        <div class="type-series">
+                                            <p>밀리 시리즈</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="card-list-type11__img"></div>
+                                    <div class="card-list-type11__txt">
+                                        <div>
+                                            <p class="series-name">히가시노 게이고 설산 시리즈</p>
+                                            <p class="series-copy">밀리의 서재의 인기 검색어에 한결같이 오르는 작가 가가ㅏ가가</p>
+                                        </div>
+                                        <div class="type-series">
+                                            <p>밀리 시리즈</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="card-list-type11__img"></div>
+                                    <div class="card-list-type11__txt">
+                                        <div>
+                                            <p class="series-name">히가시노 게이고 설산 시리즈</p>
+                                            <p class="series-copy">밀리의 서재의 인기 검색어에 한결같이 오르는 작가 가가ㅏ가가</p>
+                                        </div>
+                                        <div class="type-series">
+                                            <p>밀리 시리즈</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>서울국제도서전 개막! 강연 작가의 <br> 작품을 만나보세요<span class="hide">자세히보기</span></h2>
+                        <p class="mt9"></p>
+                    </a>
+                </div>
+                <div class="card-list-type8 mt15">
+                    <div class="swiper basic-slide">
+                        <ul class=" swiper-wrapper book-list ">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf"><span class="hide">pdf</span></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">뼈의기록</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">천선란</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf hide"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">뼈의기록</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">천선란</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf hide"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">뼈의기록</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">천선란</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf hide"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">뼈의기록</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">천선란</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>책을 선택하는 기중, 완독지수<span class="hide">자세히보기</span></h2>
+                        <p class="mt9">완독할 확률과 예상 시간으로 책 골라보기</p>
+                    </a>
+                </div>
+                <div class="category-btn-type1 mt15">
+                    <ul>
+                        <li><button>홀릭</button></li>
+                        <li><button class="select">밀리 픽</button></li>
+                        <li><button>히든</button></li>
+                        <li><button>마니아</button></li>
+                    </ul>
+                </div>
+                <div class="card-list-type9 mt15">
+                    <div class="swiper content-slide">
+                        <ul class=" swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#none" class="card-list-type9__cover">
+                                    <div class="caterory-cover-copy">
+                                        <b class="caterory-cover-title">밀리 픽</b>
+                                        <p class="caterory-cover-sub">밀리 회원들이 검증한 후회 없는 책</p>
+                                    </div>
+                                    <div class="time">
+                                        <p>66%</p>
+                                        <p>258분</p>
+                                    </div>
+                                    <span class="millie-pick"></span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                            <a href="#none">
+                                                <div class="book-list__img1 relative">
+                                                    <div class="book-list__badge1 pdf"></div>
+                                                    <div class="book-list__badge2 pdf hide"></div>
+                                                </div>
+                                                <p class="book-list__title">뼈의기록</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">천선란</p>
+                                                    <p class="book-list__time">79%<span class="line"></span> 53분</p>
+                                                </div>
+                                            </a>
+                             </li>
+                            <li class="swiper-slide">
+                                            <a href="#none">
+                                                <div class="book-list__img1 relative">
+                                                    <div class="book-list__badge1 pdf"></div>
+                                                    <div class="book-list__badge2 pdf hide"></div>
+                                                </div>
+                                                <p class="book-list__title">뼈의기록</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">천선란</p>
+                                                    <p class="book-list__time">79%<span class="line"></span> 53분</p>
+                                                </div>
+                                            </a>
+                             </li>
+                            <li class="swiper-slide">
+                                            <a href="#none">
+                                                <div class="book-list__img1 relative">
+                                                    <div class="book-list__badge1 pdf"></div>
+                                                    <div class="book-list__badge2 pdf hide"></div>
+                                                </div>
+                                                <p class="book-list__title">뼈의기록</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">천선란</p>
+                                                    <p class="book-list__time">79%<span class="line"></span> 53분</p>
+                                                </div>
+                                            </a>
+                             </li>
+                            <li class="swiper-slide">
+                                            <a href="#none">
+                                                <div class="book-list__img1 relative">
+                                                    <div class="book-list__badge1 pdf"></div>
+                                                    <div class="book-list__badge2 pdf hide"></div>
+                                                </div>
+                                                <p class="book-list__title">뼈의기록</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">천선란</p>
+                                                    <p class="book-list__time">79%<span class="line"></span> 53분</p>
+                                                </div>
+                                            </a>
+                             </li>
+                        </ul>
+                    </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>한달이내 출간 된 책<span class="hide">자세히보기</span></h2>
+                        <p class="mt9"></p>
+                    </a>
+                </div>
+                <div class="card-list-type8 mt15">
+                    <div class="swiper basic-slide">
+                        <ul class="swiper-wrapper book-list">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">지리를 알면 보이는 것 들</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">정은혜</p>
+                                        <p class="book-list__time">38% <span class="line"></span> 84분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf hide"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">스프링 부트 3 백엔드 개발자 되기(자바 편)</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">신선영</p>
+                                        <p class="book-list__time">39% <span class="line"></span> 219분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">지리를 알면 보이는 것 들</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">정은혜</p>
+                                        <p class="book-list__time">38% <span class="line"></span> 84분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf hide"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">스프링 부트 3 백엔드 개발자 되기(자바 편)</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">신선영</p>
+                                        <p class="book-list__time">39% <span class="line"></span> 219분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf hide"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">스프링 부트 3 백엔드 개발자 되기(자바 편)</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">신선영</p>
+                                        <p class="book-list__time">39% <span class="line"></span> 219분</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-list-type10 mt15">
+                    <div class="swiper basic-slide2">
+                        <ul class="swiper-wrapper book-list">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div>
+                                        <div class="book-list__img1 relative">
+                                            <div class="book-list__badge1 pdf hide"></div>
+                                            <div class="book-list__badge2 pdf hide"></div>
+                                        </div>
+                                        <p class="book-list__title">이육사 시집</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer">이육사</p>
+                                            <p class="book-list__time hide">38% <span class="line"></span> 84분</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div>
+                                        <div class="book-list__img1 relative">
+                                            <div class="book-list__badge1 pdf hide"></div>
+                                            <div class="book-list__badge2 pdf hide"></div>
+                                        </div>
+                                        <p class="book-list__title">지리를 알면 보이는 것 <br> 들</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer">정은혜</p>
+                                            <p class="book-list__time">38% <span class="line"></span> 84분</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf hide"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">스프링 부트 3 백엔드 <br>개발자 되기(자바 편)</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">신선영</p>
+                                        <p class="book-list__time">39% <span class="line"></span> 219분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf hide"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">스프링 부트 3 백엔드 <br>개발자 되기(자바 편)</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">신선영</p>
+                                        <p class="book-list__time">39% <span class="line"></span> 219분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 pdf hide"></div>
+                                        <div class="book-list__badge2 pdf hide"></div>
+                                    </div>
+                                    <p class="book-list__title">스프링 부트 3 백엔드 <br>개발자 되기(자바 편)</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">신선영</p>
+                                        <p class="book-list__time">39% <span class="line"></span> 219분</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link mobile-space">
+                    <a href="#none">
+                        <h2>오늘의 첫 문장<span class="hide">자세히보기</span></h2>
+                        <p class="mt9"></p>
+                    </a>
+                </div>
+                <div class="today-sentence mt15">
+                    <div>
+                        <p class="today-sentence__book-title txt-center">비로소 우리가 된다</p>
+                        <div class="txt-box">
+                            <span class="top"></span>
+                            <p class="sentence txt-center">우리, 우리를 주어로 한 <br>
+                                문장을 계속해서 <br>
+                                만들어가자.</p>
+                            <span class="bottom"></span>
+                        </div>
+                        <p class="writer txt-center">임지은, &lt;헤아림의 조각들&gt;
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="notice">
+                <a href="#none">[공지-완료]LG U+ 휴대폰 본인인증 오류 안내_06/02</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <h2>(주) 밀리의 서재</h2>
+            <ul class="sns-link">
+                <li>
+                    <a href="#none" class="insta"><span class="hide">인스타그램</span></a>
+                </li>
+                <li>
+                    <a href="#none" class="youtube"><span class="hide">유튜브</span></a>
+                </li>
+                <li>
+                    <a href="#none" class="kakao"><span class="hide">카카오톡</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h2 class="hide">사업자정보</h2>
+            <button>사업자 정보 펼쳐보기
+                <span class="click"></span>
+            </button>
+            <div class="footer-drop ">
+                <h2 class="hide">회사정보</h2>
+                <div>대표이사 : 서영택<span></span><span></span>사업자등록번호 : 423-88-00370<span></span>호스팅 제공자 : (주)밀리의 서재
+                </div>
+                <ul>
+                    <li>통신판매업 신고번호 : 2016-서울마포-2012호<br>
+                        <span></span>주소 : 서울특별시 마포구 양화로 45,16층 (메세나폴리스 세아타워)
+                    </li>
+                    <li>개인정보보호 책임자 : 방은혜(pb@millie.twon)<br><span></span> 제휴 문의 : business@millie.twon</li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="hide">이용약관 및 기타정보</h2>
+        <nav>
+            <ul class="footer__info">
+                <li><a href="#none">이용약관</a></li>
+                <li><a href="#none"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#none">청소년보호정책</a></li>
+                <li><a href="#none">고객센터</a></li>
+                <li><a href="#none">환불신청</a></li>
+                <li><a href="#none">B2B 문의</a></li>
+                <li><a href="#none">콘텐츠 제휴문의</a></li>
+                <li><a href="#none">저작권/도서오류 신고</a></li>
+                <li><a href="#none">뷰어 다운로드</a></li>
+                <li><a href="#none">종료 예정 도서</a></li>
+                <li><a href="#none">회사 소개</a></li>
+            </ul>
+        </nav>
+        <p class="copy">Coptright © 2022밀리의 서재 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

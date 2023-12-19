@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밀리로드-도전작품 / 밀리의서재</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/default.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body >
+    <header>
+        <div class="fixed-top">
+            <h1 class="logo">
+                <img src="images/img_logo.png" alt="millie">
+            </h1>
+            <h2 class="hide">상단메뉴</h2>
+            <nav class="header__top">
+                <ul class="header__nav__btn">
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html">NOW</a><span class="link"></span></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/story.html">스토리</a><span class="link"></span></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/millie-road-recomand.html" class="header__nav__btn--active">밀리로드</a><span class="link"></span></li>
+                </ul>
+            </nav>
+        </div>
+        <h2 class="hide">하단메뉴</h2>
+        <nav class="header-bottom fixed-bottom">
+            <ul class="nav-buttom">
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html" class="btn-today nav-buttom--active">투데이</a><span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html" class="brn-feed">피드</a><span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/search.html" class="btn-search">검색</a><span class="link"></span></li>
+                <li><a href="#none" class="btn-mylibrary">내서재</a></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/account-management.html" class="btn-management">관리</a><span class="link"></span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="hide">도전작품</h2>
+            <div class="category-btn-type2 mt48 mobile-space">
+                <ul>
+                    <li><span class="link"></span><a href="http://doyoung.dothome.co.kr/010%20mobileapp/millie-road-recomand.html">추천 작품</a></li>
+                    <li><span class="link"></span><a href="http://doyoung.dothome.co.kr/010%20mobileapp/millie-road-challenge.html" class="select">도전 작품</a></li>
+                    <li><a href="#none">MY</a></li>
+                </ul>
+                <button class="btn-write"><span class="hide">글쓰기</span></button>
+            </div>
+        </section>
+        <section>
+            <h3 class="hide">도전작품 리스트</h3>
+            <div class="count-view mobile-space mt34">
+                <p>총486개</p>
+                <div class="btn-sort">
+                    <button class="btn_sort-recent active">최신순<span class="click"></span></button>
+                    <button class="btn_sort-filter">전체<span class="click"></span></button>
+                </div>
+            </div>
+            <div class="sort-box-filter sort-popup">
+                <div class="sort-filter">
+                    <div class="cover-menu">
+                        <div class="btn-box-top">
+                            <p class="sort-popup__title">정렬 순서</p>
+                            <ul class="sort-list">
+                                <li><button>최신순</button></li>
+                                <li><button>밀어주리순</button></li>
+                                <li><button>조회순</button></li>
+                            </ul>
+                        </div>
+                        <div class="btn-box-bottom">
+                            <button class="cancel">취소</button>
+                            <button class="check">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dimed"></div>
+            <div class="card-list-type3">
+                <ul>
+                    <li>
+                        <a href="#none">
+                            <div class="card-list-type3__img1"></div>
+                            <div class="card-list-type3__txt-box">
+                                <div class="txt-box__info">
+                                    <div>
+                                        <span>연재</span>
+                                        <span>총 10화</span>
+                                        <span class="yellow-box"><b>1명</b>이 밀어줌</span>
+                                    </div>
+                                    <p class="txt-type1 mt9">
+                                        잊지 못하고 그리워 하는날
+                                    </p>
+                                    <p class="book-info txt-type2 mt11">잊지 못하고 그리워 하는날의 줄거리는 작 <br> 가의 실제 경험을 토대로 쓴
+                                        소설입니다
+                                    </p>
+                                    <p class="txt-type2 mt11">박유정 작가</p>
+                                </div>
+                                <div class="view-count mt16">
+                                    <span><span class="hide">조회수</span>89</span>
+                                    <span><span class="hide">댓글수</span>0</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <div class="card-list-type3__img1"></div>
+                            <div class="card-list-type3__txt-box">
+                                <div class="txt-box__info">
+                                    <div>
+                                        <span>연재</span>
+                                        <span>총 8화</span>
+                                        <span class="yellow-box"><b>42명</b>이 밀어줌</span>
+                                    </div>
+                                    <p class="txt-type1 mt9">
+                                        지금 귀여운 우주에 있어
+                                    </p>
+                                    <p class="book-info txt-type2 mt11">독서를 통해 자신을 발견해온 과정을 필사, 독서기록 등으로 촘촘하게 쌓아온
+                                        작가'ㄴㄴㄴㄴ
+                                    </p>
+                                    <p class="txt-type2 mt11">하루의책상</p>
+                                </div>
+                                <div class="view-count mt16">
+                                    <span><span class="hide">조회수</span>1.0천</span>
+                                    <span><span class="hide">댓글수</span>16</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <div class="card-list-type3__img1"></div>
+                            <div class="card-list-type3__txt-box">
+                                <div class="txt-box__info">
+                                    <div>
+                                        <span>연재</span>
+                                        <span>총 8화</span>
+                                        <span class="yellow-box"><b>42명</b>이 밀어줌</span>
+                                    </div>
+                                    <p class="txt-type1 mt9">
+                                        지금 귀여운 우주에 있어
+                                    </p>
+                                    <p class="book-info txt-type2 mt11">독서를 통해 자신을 발견해온 과정을 필사, 독서기록 등으로 촘촘하게 쌓아온
+                                        작가'ㄴㄴㄴㄴ
+                                    </p>
+                                    <p class="txt-type2 mt11">하루의책상</p>
+                                </div>
+                                <div class="view-count mt16">
+                                    <span><span class="hide">조회수</span>1.0천</span>
+                                    <span><span class="hide">댓글수</span>16</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <div class="card-list-type3__img1"></div>
+                            <div class="card-list-type3__txt-box">
+                                <div class="txt-box__info">
+                                    <div>
+                                        <span>연재</span>
+                                        <span>총 8화</span>
+                                        <span class="yellow-box"><b>42명</b>이 밀어줌</span>
+                                    </div>
+                                    <p class="txt-type1 mt9">
+                                        지금 귀여운 우주에 있어
+                                    </p>
+                                    <p class="book-info txt-type2 mt11">독서를 통해 자신을 발견해온 과정을 필사, 독서기록 등으로 촘촘하게 쌓아온
+                                        작가'ㄴㄴㄴㄴ
+                                    </p>
+                                    <p class="txt-type2 mt11">하루의책상</p>
+                                </div>
+                                <div class="view-count mt16">
+                                    <span><span class="hide">조회수</span>1.0천</span>
+                                    <span><span class="hide">댓글수</span>16</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <div class="card-list-type3__img1"></div>
+                            <div class="card-list-type3__txt-box">
+                                <div class="txt-box__info">
+                                    <div>
+                                        <span>연재</span>
+                                        <span>총 8화</span>
+                                        <span class="yellow-box"><b>42명</b>이 밀어줌</span>
+                                    </div>
+                                    <p class="txt-type1 mt9">
+                                        지금 귀여운 우주에 있어
+                                    </p>
+                                    <p class="book-info txt-type2 mt11">독서를 통해 자신을 발견해온 과정을 필사, 독서기록 등으로 촘촘하게 쌓아온
+                                        작가'ㄴㄴㄴㄴ
+                                    </p>
+                                    <p class="txt-type2 mt11">하루의책상</p>
+                                </div>
+                                <div class="view-count mt16">
+                                    <span><span class="hide">조회수</span>1.0천</span>
+                                    <span><span class="hide">댓글수</span>16</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <div class="card-list-type3__img1"></div>
+                            <div class="card-list-type3__txt-box">
+                                <div class="txt-box__info">
+                                    <div>
+                                        <span>연재</span>
+                                        <span>총 8화</span>
+                                        <span class="yellow-box"><b>42명</b>이 밀어줌</span>
+                                    </div>
+                                    <p class="txt-type1 mt9">
+                                        지금 귀여운 우주에 있어
+                                    </p>
+                                    <p class="book-info txt-type2 mt11">독서를 통해 자신을 발견해온 과정을 필사, 독서기록 등으로 촘촘하게 쌓아온
+                                        작가'ㄴㄴㄴㄴ
+                                    </p>
+                                    <p class="txt-type2 mt11">하루의책상</p>
+                                </div>
+                                <div class="view-count mt16">
+                                    <span><span class="hide">조회수</span>1.0천</span>
+                                    <span><span class="hide">댓글수</span>16</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="notice ">
+            <a href="#none">[공지-완료]LG U+ 휴대폰 본인인증 오류 안내_06/02</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <h2>(주) 밀리의 서재</h2>
+            <ul class="sns-link">
+                <li>
+                    <a href="#none" class="insta"><span class="hide">인스타그램</span></a>
+                </li>
+                <li>
+                    <a href="#none" class="youtube"><span class="hide">유튜브</span></a>
+                </li>
+                <li>
+                    <a href="#none" class="kakao"><span class="hide">카카오톡</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h2 class="hide">사업자정보</h2>
+            <button>사업자 정보 펼쳐보기
+                <span class="click"></span>
+            </button>
+            <div class="footer-drop hide">
+                <h2 class="hide">회사정보</h2>
+                <div>대표이사 : 서영택<span></span><span></span>사업자등록번호 : 423-88-00370<span></span>호스팅 제공자 : (주)밀리의 서재
+                </div>
+                <ul>
+                    <li>통신판매업 신고번호 : 2016-서울마포-2012호<br>
+                        <span></span>주소 : 서울특별시 마포구 양화로 45,16층 (메세나폴리스 세아타워)
+                    </li>
+                    <li>개인정보보호 책임자 : 방은혜(pb@millie.twon)<br><span></span> 제휴 문의 : business@millie.twon</li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="hide">이용약관 및 기타정보</h2>
+        <nav>
+            <ul class="footer__info">
+                <li><a href="#none">이용약관</a></li>
+                <li><a href="#none"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#none">청소년보호정책</a></li>
+                <li><a href="#none">고객센터</a></li>
+                <li><a href="#none">환불신청</a></li>
+                <li><a href="#none">B2B 문의</a></li>
+                <li><a href="#none">콘텐츠 제휴문의</a></li>
+                <li><a href="#none">저작권/도서오류 신고</a></li>
+                <li><a href="#none">뷰어 다운로드</a></li>
+                <li><a href="#none">종료 예정 도서</a></li>
+                <li><a href="#none">회사 소개</a></li>
+            </ul>
+        </nav>
+        <p class="copy">Coptright © 2022밀리의 서재 All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

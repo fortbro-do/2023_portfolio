@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 가이드</title> <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="guide mobile-space" id="top"></div>
+    <nav class="guide-nav">
+        <a href="#top" style="color: red; border: 1px solid red;">Top</a>
+        <a href="#guide1">헤더</a>
+        <a href="#guide2">폼</a>
+        <a href="#guide3">버튼</a>
+        <a href="#guide4">정렬</a>
+        <a href="#guide5">표</a>
+        <a href="#guide6">페이징</a>
+        <a href="#guide7">제목</a>
+        <a href="#guide8">게시물</a>
+        <a href="#guide9">텍스트 리스트</a>
+        <a href="#guide10">박스</a>
+        <a href="#guide11">팝업</a>
+    </nav>
+    <div class="style-box" style="height: 60rem; margin-top: 20rem;">
+        <h2 id="guide1">헤더</h2>
+        <header class="header">
+            <div class="header__web">
+                <div class="header__link">
+                    <h1><span class="link"></span>
+                        <a href="#none">
+                            <img src="images/img_logo.png" alt="REBEHAYAN">
+                        </a>
+                    </h1>
+                    <nav>
+                        <ul class="header__gnb">
+                            <li><a href="#none">소년소녀부</a>
+
+                            </li>
+                            <li><a href="#none">미래부</a></li>
+                            <li><a href="#none" class="active">미래본부 및 사명회</a>
+                                <div>
+                                    <ul class="drop-menu">
+                                        <li>
+                                            <a href="#none">공지사항</a>
+                                        </li>
+                                        <li><a href="#none" class="active">스피치</a></li>
+                                        <li><a href="#none">매뉴얼 및 조직도</a></li>
+                                        <li><a href="#none">활동방향</a></li>
+                                        <li><a href="#none">부원회 운영자료</a>
+                                            <ul class="drop-menu-detail ">
+                                                <li><a href="#none">
+                                                        본부 등재자료
+                                                    </a></li>
+                                                <li><a href="#none">
+                                                        미래부 신문
+                                                    </a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#none">미래본부 회의록</a>
+                                            <ul class="drop-menu-detail">
+                                                <li><a href="#none">회의록 작성
+                                                    </a></li>
+                                                <li><a href="#none">참석결과 등록</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#none">교육부</a></li>
+                            <li><a href="#none">미래부 자료실</a></li>
+                            <li><a href="#none">커뮤니티</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__btn-box">
+                    <button class="header__btn_login">로그인</button>
+                    <button class="header__btn_sitemap">사이트맵</button>
+                </div>
+                <div class="drop-menu__bg"></div>
+            </div>
+            <div class="header__mobile">
+                <h1><span class="link"></span>
+                    <a href="#none">
+                        <img src="images/img_logo-white.png" alt="REBEHAYAN">
+                    </a>
+                </h1>
+                <button class="btn_search"></button>
+                <button class="btn_menu"></button>
+            </div>
+            <div class="drop-menu__bg"></div>
+        </header>
+    <div class="drop-menu__bg"></div>
+    </div>
+    <main>
+        <div class="style-box">
+            <h2 id="guide2" >폼</h2>
+            <input type="text"><br><br>
+            <input type="password" placeholder="비밀번호를 입력하세요. ">
+            <br><br>
+            <div>
+                <input type="checkbox" id="chk1_1" class="hide">
+                <label for="chk1_1">아이디 저장</label>
+            </div>
+            <br>
+            <select>
+                <option>선택하세요.</option>
+            </select>
+            <br><br>
+            <textarea placeholder="정보를 입력하세요"></textarea>
+        </div>
+        <div class="style-box">
+            <h2 id="guide3">버튼</h2>
+            <button class="btn-gray">회색버튼</button>
+            <button class="btn-yellow">노랑색버튼</button>
+            <br><br><br><br><br>
+        </div>
+        <div class="style-box">
+            <h2 id="guide4">정렬</h2>
+            <div class="align left">
+                <div>left</div>
+            </div>
+            <div class="align center">
+                <div>center</div>
+            </div>
+            <div class="align right">
+                <div>right</div>
+            </div>
+            <div class="align both">
+                <div>both</div>
+                <div>both</div>
+            </div>
+            <div class="align vt">
+                <div>top</div>
+            </div>
+            <div class="align vm">
+                <div>middle</div>
+            </div>
+            <div class="align vb">
+                <div>bottom</div>
+            </div>
+        </div>
+
+
+        <div class="style-box">
+            <h2 id="guide5">표</h2>
+            <table class="table-type1">
+                <caption>제목</caption>
+                <colgroup>
+                    <col style="width:20rem">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>제목</th>
+                        <td>내용</td>
+                    </tr>
+                    <tr>
+                        <th>제목</th>
+                        <td>내용</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <table class="table-type2">
+                <caption>제목</caption>
+                <colgroup>
+                    <col style="width: 7.9rem;">
+                    <col>
+                    <col style="width: 17.9rem;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>제목</th>
+                        <th>제목</th>
+                        <th>제목</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>내용</td>
+                    <td class="txt-left"><a href="#none" class="title">내용</a></td>
+                    <td>내용</td>
+                </tbody>
+            </table>
+        </div>
+        <div class="style-box">
+            <h2 id="guide6">페이징</h2>
+            <nav class="paging">
+                <button class="btn-prev" disabled></button>
+                <ol>
+                    <li><a href="#none" class="paging--active">1</a></li>
+                    <li><a href="#none">2</a></li>
+                    <li><a href="#none">3</a></li>
+                    <li><a href="#none">4</a></li>
+                </ol>
+                <button class="btn-next"></button>
+            </nav>
+            <button class="btn-more">더보기</button>
+        </div>
+
+        <div class="style-box">
+            <h2 id="guide7">제목</h2>
+            <h3 class="h3">제목</h3>
+            <p class="subtitle">서브텍스트</p>
+            <h4 class="h4">제목</h4>
+            <h5 class="h5">제목</h5>
+        </div>
+        <div class="style-box">
+            <h2 id="guide8">게시물</h2>
+            <div class="board-view">
+                <div class="board-view__header">
+                    <h4 class="board-view__title">게시물제목</h4>
+                    <div class="board-view__info">
+                        <span class="board-view__date">2020-10-22</span>
+                        <span class="board-view__hit">2,541 </span>
+                    </div>
+                </div>
+                <div class="board-view__content">
+                    게시물 내용
+                </div>
+                <div class="board-view__paging">
+                    <div class="board-view__prev">
+                        <a href="#none">
+                            <span>이전글</span>
+                            <p>10월 해돋이 행사 식순자료 업데이트 되었습니다.</p>
+                        </a>
+                    </div>
+                    <div class="board-view__next">
+                        <a href="#none">
+                            <span>다음글</span>
+                            <p>자료가 없습니다</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="style-box">
+            <h2 id="guide9">텍스트 리스트</h2>
+            <ul class="list-type1">
+                <li>리스트</li>
+                <li>리스트</li>
+                <li>리스트</li>
+            </ul>
+            <ul class="list-type2">
+                <li>리스트</li>
+                <li>리스트</li>
+                <li>리스트</li>
+            </ul>
+            <nav>
+                <ul class="list-type3">
+                    <li>
+                        <h2 class="list-type3__h2">소년소녀부</h2>
+                        <p class="list-type3__txt mt16">
+                            근행창제를 성실히 실천하여 <br>
+                            사자왕의 마음을 갖는 소년소녀부
+                        </p>
+                        <a class="list-type3__btn_more"></a>
+                    </li>
+                    <li>
+                        <h2 class="list-type3__h2">미래부</h2>
+                        <p class="list-type3__txt mt16">
+                            근행창제를 실천하며 선생님의 <br>
+                            마음을 배우는 미래부!
+                        </p>
+                        <a class="list-type3__btn_more"></a>
+                    </li>
+                    <li>
+                        <h2 class="list-type3__h2">미래본부</h2>
+                        <p class="list-type3__txt mt16">
+                            학회라는 궁극적인 인간주의 <br>
+                            뜰에서 크고 풍요롭게 육성합니다
+                        </p>
+                        <a class="list-type3__btn_more"></a>
+                    </li>
+                    <li>
+                        <h2 class="list-type3__h2">교육부</h2>
+                        <p class="list-type3__txt mt16">
+                            소년소녀부와 미래부에 신심을 <br>
+                            계승하고 인재로 육성합니다
+                        </p>
+                        <a class="list-type3__btn_more"></a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="list-type4">
+                    <li>
+                        <a href="#none" class="llist-type4__home">홈</a>
+                    </li>
+                    <li>
+                        <a href="#none" class="llist-type4__type">소년소녀부</a>
+                    </li>
+                    <li>
+                        <a href="#none" class="llist-type4__type-info">소년소녀부 소개</a>
+                    </li>
+                    <li>
+                        <a href="#none" class="llist-type4__character-info">캐릭터 소개</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="style-box">
+            <h2 id="guide10">박스</h2>
+            <div class="box-type1"></div>
+        </div>
+        <div class="style-box">
+            <h2 id="guide11">팝업</h2>
+            <div class="dialog" style="--zindex:30; position: static; transform: none;">
+                <button class="btn-close"></button>
+                <h2 class="dialog__title">굵은텍스트</h2>
+                <p class="dialog__txt">일반텍스트</p>
+                <button class="btn-yellow">삭제</button>
+            </div>
+            <div class="dimed" style="--zindex:29;display:none;"></div>
+        </div>
+    </main>
+    <div class="style-box">
+        <footer class="fotter">
+            <div class="fotter__logo">리베하얀</div>
+            <div class="fotter__address">
+                <p>(06586) 서울특별시 구로구 공원로 66 리베하얀 </p><em>·</em>
+                <p> (06586) 66, Gongwon-ro, Guro-gu, Seoul, Korea</p>
+            </div>
+            <div class="fotter__number">
+                <span>TEL : 1566-1234</span><em>•</em>
+                <span>FAX : 02-5555-7300</span>
+            </div>
+            <p class="fotter__copy">Copyright <span>ⓒ</span> Rebehayan. All rights reserved. </p>
+        </footer>
+    </div>
+</body>
+
+</html>

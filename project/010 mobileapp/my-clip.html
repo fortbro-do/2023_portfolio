@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이클립 / 밀리의서재</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/default.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: #333;">
+    <header class="fixed-top quick-link">
+        <div class="title-link__type4">
+            <h1>즐겨찾기</h1>
+            <a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html"><span class="hide">뒤로가기</span><span class="link"></span></a>
+        </div>
+    </header>
+    <main class="mobile-space">
+        <div class="title-link__type5 mt48">
+                <h2>MY 클립</h2>
+                <div>
+                    <button class="btn_reset">초기화</button>
+                    <span class="line2"></span>
+                    <button>순서변경</button>
+                </div>
+        </div>
+    <nav class="my-clip mt15">
+        <ul>
+            <li>
+                <a href="#none">
+                    <div class="my-clip__ico1">
+                        <span class="alarm">10+</span>
+                    </div>
+                    <p>알림센터</p>
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <div class="my-clip__ico2">
+                    </div>
+                    <p>오디오북 + 챗북</p>
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <div class="my-clip__ico3">
+                    </div>
+                    <p>서점 베스트</p>
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <div class="my-clip__ico4">
+                    </div>
+                    <p>밀리의 발견</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="title-link__type3">
+            <h3 class="h3">전체 목록</h3>
+            <h4 class="mt11">보고, 듣고, 즐기는</h4>
+    </div>
+    <div class="chk-list mt11">
+        <ul>
+            <li>
+                <a href="#none">
+                오브제북
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box1_1" class="hide" title="오브제북">
+                    <label for="chk-box1_1" class="checkbox"></label>
+                </div>
+            </li>
+            <li>
+                <a href="#none">
+                오디오북 플레이리스트
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box1_2" class="hide" title="오디오북 플레이리스트">
+                    <label for="chk-box1_2" class="checkbox"></label>
+                </div>
+            </li>
+            <li>
+                <a href="#none">
+                챗북 소식
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box1_3" class="hide" title="챗북 소식">
+                    <label for="chk-box1_3" class="checkbox"></label>
+                </div>
+            </li>
+            <li class="checked">
+                <a href="#none">
+                오디오북·챗북
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box1_4" class="hide" title="오디오북·챗북" checked>
+                    <label for="chk-box1_4" class="checkbox"></label>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="title-link__type6">
+        <h4 class="mt11">읽을거리</h4>
+    </div>
+    <div class="chk-list mt11">
+        <ul>
+            <li>
+                <a href="#none">
+                동네책방 즐겨찾기
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box2_1" class="hide" title="동네책방 즐겨찾기">
+                    <label for="chk-box2_1" class="checkbox"></label>
+                </div>
+            </li>
+            <li class="checked">
+                <a href="#none">
+                밀리의 발견
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box2_2" class="hide" title="밀리의 발견" checked>
+                    <label for="chk-box2_2" class="checkbox"></label>
+                </div>
+            </li>
+            <li>
+                <a href="#none">
+                밀리로그
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box2_3" class="hide" title="밀리로그">
+                    <label for="chk-box2_3" class="checkbox"></label>
+                </div>
+            </li>
+            <li>
+                <a href="#none">
+                에디터의 선택
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box2_4" class="hide" title="에디터의 선택">
+                    <label for="chk-box2_4" class="checkbox"></label>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="title-link__type6">
+        <h4 class="mt11">모두가 주목</h4>
+    </div>
+    <div class="chk-list mt11">
+        <ul>
+            <li class="checked">
+                <a href="#none">
+                서점 베스트
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box3_1" class="hide" title="서점 베스트" checked>
+                    <label for="chk-box3_1" class="checkbox"></label>
+                </div>
+            </li>
+            <li>
+                <a href="#none">
+                TOP100 인기 도서
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box3_2" class="hide" title="TOP100 인기 도서">
+                    <label for="chk-box3_2" class="checkbox"></label>
+                </div>
+            </li>
+            <li>
+                <a href="#none">
+                이번 주 주목할 책
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box3_3" class="hide" title="이번 주 주목할 책">
+                    <label for="chk-box3_3" class="checkbox"></label>
+                </div>
+            </li>
+            <li>
+                <a href="#none">
+                밀리 오리지널
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box3_4" class="hide" title="밀리 오리지널">
+                    <label for="chk-box3_4" class="checkbox"></label>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="title-link__type6">
+        <h4 class="mt11">다양하게 만나는 책</h4>
+    </div>
+    <div class="chk-list mt11">
+        <ul>
+            <li class="checked">
+                <a href="#none">
+                완독지수
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box4_1" class="hide" title="완독지수" checked>
+                    <label for="chk-box4_1" class="checkbox"></label>
+                </div>
+            </li>
+            <li>
+                <a href="#none">
+                밀리가 주목한 작가
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box4_2" class="hide" title="밀리가 주목한 작가">
+                    <label for="chk-box4_2" class="checkbox"></label>
+                </div>
+            </li>
+            <li>
+                <a href="#none">
+                오리지널 로맨스
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box4_3" class="hide" title="오리지널 로맨스">
+                    <label for="chk-box4_3" class="checkbox"></label>
+                </div>
+            </li>
+            <li>
+                <a href="#none">
+                취향별 추천 책
+                </a>
+                <div class="chk-group">
+                    <input type="checkbox" id="chk-box4_4" class="hide" title="취향별 추천 책">
+                    <label for="chk-box4_4" class="checkbox"></label>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
+</body>
+</html>
+

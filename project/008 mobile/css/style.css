@@ -1,0 +1,1383 @@
+html {
+    font-size: 62.5%;
+    /* 
+    62.5% = 10px
+    모든 브라우저가 같다. 
+     */
+}
+
+body {
+    font-size: 1rem;
+    /* 
+    10px = 1rem */
+}
+/* 스크롤 */
+body::-webkit-scrollbar {
+        width: 4px;
+        background-color: transparent;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        width: 4px;
+        background-color: #DDDADA;
+        border-radius: 5px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+.review {
+    font-size: 1.4rem;
+    background: var(--graycc);
+    padding: 1rem;
+}
+
+.rem {
+    font-size: 2rem;
+    border: 3rem solid blue;
+    padding: 10rem;
+    width: 30rem;
+    height: 20rem;
+}
+
+.px {
+    font-size: 20px;
+    border: 30px solid red;
+    padding: 100px;
+    width: 300px;
+    height: 200px;
+}
+
+:root {
+    --white: #ffffff;
+    --gray83: #838A93;
+    --gray33: #333333;
+    --graybd: #bdbdbd;
+    --graye0: #E0E0E0;
+    --graye1: #e1e1e1;
+    --grayfb: #f8f8f8;
+    --graycc: #CCCCCC;
+    --grayab: #ABABAB;
+    --grayfa: #FAFAFA;
+    --redff0: #FF0000;
+    --grayd7: #D7D7D7;
+    --grayee: #EEEEEE;
+    --gray66: #666666;
+    --black06: #060606;
+    --gray55: #555D67;
+    --green21: #219653;
+    --grayf4f5: #F4F5FB;
+    --grayd6: #D6D9E1;
+    --black1e: #1E2530;
+    --graye5: #E5E8F0;
+    --graya5: #A5ACB8;
+    --blue47: #47BDFF;
+    --purpl5de: #5D5FEF;
+    --gray99: #999999;
+    --blue005: #005BAC;
+    --blackop33: #00000033;
+    --black00: #000000;
+    --blue00d: #00D4EA;
+    --orangeff: #FF6A13;
+    --grayc0: #C0C4CD;
+    --yellowfa: #FAC300;
+    --yellowfd: #FDBF44;
+    --grayfc: #FCFCFC;
+
+}
+
+.example4 {
+    background: var(--white);
+    padding: 2rem;
+}
+
+.example4 .example4-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem;
+    padding: 2rem;
+    background: var(--grayfb);
+    border: 1px solid var(--graye1);
+}
+
+.example4 .example4-list .column {
+    grid-column: 1/ 3;
+}
+
+.example4 .example4-list a {
+    display: flex;
+    align-items: center;
+    height: 4.8rem;
+    padding: 0 1.2rem;
+    border: 1px solid var(--graybd);
+    background: url(../images/ico_arrow_right.svg) no-repeat right 1.2rem center var(--white);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: -0.05rem;
+    color: var(--gray33);
+}
+
+/* 예제1 */
+
+.example1 .profile-btn button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.example1 .delete {
+    color: var(--redff0);
+    background-color: var(--white);
+}
+
+.example1 .edit::after {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: 0.5rem;
+    content: "";
+    margin: 0 0.8rem 0;
+    height: 1.2rem;
+    border-right: 1px solid var(--grayd7);
+
+}
+
+.example1 .edit {
+    color: var(--grayab);
+    background-color: var(--white);
+}
+
+.example1 .date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--graycc);
+    padding: 0.8rem 0 0;
+}
+
+.example1 .id {
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    letter-spacing: -0.05rem;
+    color: var(--gray33);
+}
+
+.example1 .comment {
+    padding: 0 0 1.6rem;
+    border-bottom: 1px solid var(--grayee);
+}
+
+.example1 .comment li {
+    padding: 2rem 2.5rem 2.8rem 2.8rem;
+    display: grid;
+    grid-template-columns: 4.8rem 1fr 10.9rem;
+    gap: 1.2rem;
+}
+
+.example1 .comment .cantent {
+    grid-column: 1 / -1;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.05rem;
+    color: var(--gray33);
+}
+
+.example1 .write {
+    gap: 0.8rem;
+    padding: 4rem 2.8rem 2rem;
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) 4.8rem;
+    box-sizing: border-box;
+}
+
+.example1 .column {
+    grid-column: 1 / -1;
+}
+
+.example1 .detail {
+    width: 100%;
+    height: 14rem;
+    resize: none;
+    border: 1px solid var(--graycc);
+    border-radius: 0.8rem;
+    padding: 1.7rem 1.6rem;
+    box-sizing: border-box;
+}
+
+.example1 .detail::placeholder {
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: -0.05rem;
+    color: var(--graycc);
+}
+
+.example1 .write input::placeholder {
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: -0.05rem;
+    color: var(--graycc);
+}
+
+.example1 .write p {
+    margin: 0 0 1.2rem;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    letter-spacing: -0.05rem;
+    color: var(--gray33);
+}
+
+.example1 .write input {
+    height: 4.8rem;
+    background: var(--white);
+    border: 1px solid var(--graycc);
+    border-radius: 0.8rem;
+    padding: 0 1.6rem;
+    box-sizing: border-box;
+}
+
+.example1 .comment li .name {
+    align-self: center;
+}
+
+.example1 .addfile {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url(../images/ico_addfile.png) no-repeat;
+}
+
+.example1 .comment li .profile-btn {
+    align-self: end;
+}
+
+.example1 .btn-write {
+    height: 5.2rem;
+    background: url(../images/ico_write_white.svg) no-repeat center var(--gray33);
+    border-radius: 0.8rem;
+}
+
+/* 예제6 */
+
+.example6 {
+    padding: 1.6rem 1.6rem 2rem;
+}
+
+.example6 .discount {
+    padding: 0 0 1.6rem;
+    margin: 0 0 1.6rem;
+    border-bottom: 1px solid var(--graye5);
+}
+
+.example6>div {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: 5.4rem 1fr 9.4rem;
+    box-sizing: border-box;
+}
+
+.example6>div h3 {
+    position: relative;
+    grid-column: 1 / 4;
+}
+
+.example6>div .detail{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    color: var(--black06);
+    background: var(--white);
+
+}
+.example6>div .detail::after {
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background: url(../images/ico_arrow_up_gray.svg) no-repeat center;
+}
+
+.example6 div>p {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--gray55);
+}
+.example6 div p label {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--gray55);
+}
+
+.example6>div p {
+    grid-column: 1 / 3;
+}
+
+.example6>div span {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--green21);
+    margin: 0 0 0 0.8rem;
+}
+
+.example6 div .num input{
+    height: 4.7rem;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    text-align: right;
+    border-radius: 3rem;
+    padding: 0 3.4rem 0 0;
+    border: 1px solid var(--grayd6);
+    box-sizing: border-box;
+}
+.example6 div .num input::placeholder {
+    color: var(--graya5);
+    align-self: center;
+}
+.example6 div .num .ko {
+    right: 1.3rem;
+}
+.example6 div .num p {
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    text-align: right;
+    color: var(--graya5);
+    align-self: center;
+}
+
+.example6 div .coupon p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    text-align: right;
+    color: var(--graya5);
+    align-self: center;
+}
+
+.example6 div>.num {
+    position: relative;
+    display: grid;
+    grid-column: 1 / 3;
+}
+
+.example6>div .coupon {
+    display: grid;
+    padding: 0 1.6rem 0 0;
+    grid-column: 1 /4;
+    height: 4.7rem;
+    background: var(--grayf4f5);
+    border: 1px solid var(--grayd6);
+    border-radius: 3rem;
+}
+
+.example6 .all-use {
+    height: 4.7rem;
+    background: var(--black1e);
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--white);
+}
+
+.example6 .discount .txt-btn {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--gray55);
+    background: url(../images/ico_arrow_right_black_1.svg) no-repeat right 0 center;
+}
+
+/* 예제2 */
+
+
+.example2 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.8rem;
+    height: 6.85rem;
+}
+
+.example2 h3 a {
+    display: flex;
+    height: 2.5rem;
+    width: 2.2rem;
+    background: url(../images/img_logo_s.png) no-repeat;
+}
+
+.example2 .burger {
+    height: 1.9rem;
+    width: 2.4rem;
+    text-align: right;
+    background: url(../images/ico_burger.svg) no-repeat;
+}
+.example2 .thumb_1 li {
+    position: relative;
+}
+
+.example2 .thumb_1 li div {
+    position: absolute;
+    left: 0;
+    bottom: 4rem;
+    width: 100%;
+    padding: 0 3.1rem 0 2.8rem;
+    box-sizing: border-box;
+}
+
+.example2 .thumb_1 li img {
+    width: 100%;
+}
+
+.example2 .thumb_1 li .arrow_1::after{
+    content: "";
+    position: absolute;
+    right: 3.1rem;
+    bottom: -0.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100%;
+    background: url(../images/ico_arrow_right_white.svg) no-repeat center var(--blue47);
+}
+
+.example2 .thumb_1 li .arrow_2::after {
+    content: "";
+    position: absolute;
+    right: 3.1rem;
+    bottom: -0.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100%;
+    background: url(../images/ico_arrow_right_white.svg) no-repeat center var(--purpl5de);
+}
+
+.example2 .thumb_1 li .arrow_3::after {
+    content: "";
+    position: absolute;
+    right: 3.1rem;
+    bottom: -0.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100%;
+    background: url(../images/ico_arrow_right_white.svg) no-repeat center var(--gray99);
+}
+
+.example2 .thumb_1 li .title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: -0.05rem;
+    color: var(--white);
+}
+
+.example2 .thumb_1 li .date {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: -0.05rem;
+    color: var(--white);
+}
+
+/* 예제3 */
+
+.example3 {
+    padding: 0 2.8rem;
+    position: relative;
+    height: 100vh;
+}
+
+.example3 header a {
+    display: flex;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url(../images/img_logo_square.png) no-repeat;
+}
+
+.example3 .login h4 {
+    font-weight: 900;
+    font-size: 5.4rem;
+    line-height: 4.8rem;
+    color: var(--gray33);
+    margin: 0 0 4rem;
+}
+
+.example3 .warning {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: -0.01rem;
+    color: var(--gray33);
+    margin: 0 0 1.25rem;
+}
+
+.example3 .warning::before {
+    content: "";
+    display: inline-flex;
+    align-items: center;
+    vertical-align: 0.5rem;
+    width: 1.4rem;
+    height: 1.5rem;
+    margin: 0 0.4rem 0 0;
+    background: url(../images/img_warning.png) no-repeat;
+}
+
+.example3 .login input::placeholder {
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: -0.05rem;
+    color: var(--graycc);
+}
+
+.example3 .login input {
+    padding: 0 0 0 1.5rem;
+    margin: 0 0 1.2rem;
+    width: 100%;
+    height: 4.8rem;
+    background: var(--white);
+    border: 1px solid var(--grayd7);
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+}
+
+.example3 .login button {
+    margin: 0.8rem 0 4.05rem;
+    width: 100%;
+    height: 4.8rem;
+    background: var(--gray33);
+    border-radius: 0.6rem;
+    color: var(--white);
+    box-sizing: border-box;
+}
+
+.example3 li {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 100%;
+    letter-spacing: -0.05rem;
+    color: var(--graycc);
+}
+
+.example3 .login-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 2.8rem;
+    box-sizing: border-box;
+}
+
+/* 예제5 */
+
+.example5 {
+    border: 0.4rem solid var(--blue005);
+    margin: 2rem;
+    padding: 2.4rem;
+    box-sizing: border-box;
+}
+
+.example5 h3 {
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.05rem;
+    color: var(--gray33);
+}
+
+.example5 li {
+    border-bottom: 1px solid var(--blackop33);
+    padding: 0 0 2rem;
+}
+
+.example5 .title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: -0.05rem;
+    color: var(--gray33);
+    margin: 2rem 0 0.8rem;
+}
+
+.example5 .bottom {
+    border: none;
+    padding: 0;
+}
+
+.example5 .info {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    letter-spacing: -0.05rem;
+    color: var(--gray33);
+}
+
+/* 예제7 */
+
+.example7 .info {
+    padding: 2rem 1.95rem 1rem;
+}
+
+.example7 div .list {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    padding: 1rem 0;
+    border-collapse: collapse;
+    border-top: 1px solid var(--black00);
+}
+
+.example7 div .list.border-bottom {
+    border-bottom: 1px solid var(--black00);
+
+}
+
+.example7 div .list p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: var(--black00);
+}
+
+.example7 div .list .sub-list {
+    margin: 0 0 0.8rem;
+}
+
+.example7 div .list ul li {
+    display: grid;
+    grid-template-columns: 1.7rem 1fr;
+}
+
+.example7 div .list ul li span::before {
+    content: "";
+    display: inline-flex;
+    margin: 0 0 0 0.6rem;
+    vertical-align: 0.1rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 100%;
+    background-color: var(--black00);
+
+}
+
+.example7 div .list ul li {
+    /* text-indent: -2.1rem; */
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: var(--black00);
+}
+
+.example7 div .list .title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: var(--black00);
+}
+
+.example7 .btn-group {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1.95rem 4.5rem;
+}
+
+.example7 .btn-group .btn-white {
+    width: 100%;
+    height: 3.4rem;
+    background: var(--white);
+    border: 1px solid var(--black00);
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: var(--black00);
+}
+
+.example7 .btn-group .btn-black {
+    grid-column: 1 / 3;
+    width: 100%;
+    height: 3.4rem;
+    background: var(--black00);
+    border: 1px solid var(--black00);
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: var(--white);
+}
+
+/* 예제8 */
+
+.example8 {
+    padding: 1.7rem 1.6rem 2rem;
+}
+
+.example8>p span {
+    color: var(--orangeff);
+}
+
+.example8>p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--gray55);
+}
+
+.example8 h3 {
+    margin: 0 0 0.9rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    color: var(--black06);
+}
+
+.example8 h3::before {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: 0.8rem;
+    margin: 0 0.8rem 0 0;
+    content: "";
+    width: 3.2rem;
+    height: 3.2rem;
+    background: url(../images/img_ex8_bag.svg) no-repeat;
+}
+
+.example8 ul {
+    padding: 2rem 0 0;
+}
+
+.example8 ul li {
+    margin: 0 0 2rem;
+}
+
+.example8 ul li a {
+    width: 100%;
+    height: 12.6rem;
+    background: var(--white);
+    border: 1px solid var(--graye5);
+    box-shadow: 0 0.2rem 0.4rem rgba(6, 6, 6, 0.08);
+    border-radius: 1.2rem;
+    display: grid;
+    grid-template-columns: 12.7rem 1fr 3.6rem;
+}
+
+.example8 ul li .store {
+    font-weight: 700;
+    color: var(--black1e);
+}
+
+.example8 ul li .store span {
+    font-weight: 700;
+    color: var(--blue00d);
+}
+
+.example8 ul li .date {
+    margin: 0.2rem 0 0;
+    color: var(--gray55);
+}
+
+.example8 ul li .items {
+    color: var(--gray83);
+    margin: 0.8rem 0 0;
+}
+
+.example8 ul li p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.example8 ul li img {
+    align-self: center;
+    justify-self: center;
+}
+
+.example8 ul li div {
+    align-self: center;
+}
+
+.example8 ul li .arrow {
+    align-self: center;
+    justify-self: center;
+    height: 1.6rem;
+    width: 1.6rem;
+    background: url(../images/ico_ex8_arrow_16.svg);
+}
+
+.example8 button {
+    width: 100%;
+    height: 4.7rem;
+    background-color: var(--white);
+    border: 1px solid var(--grayd6);
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--black1e);
+}
+
+/* 예제9 */
+
+.example9 {
+    padding: 1rem 1.6rem 1.2rem;
+}
+
+.example9 .title {
+    display: grid;
+    grid-template-columns: 3.6rem 1fr 3.6rem;
+    margin: 0 0 3rem;
+}
+
+.example9 h3 {
+    order: 2;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    text-align: center;
+    color: var(--black06);
+}
+
+.example9 .title button {
+    order: 1;
+    align-self: center;
+    justify-self: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url(../images/ico_ex9_arrow_left_black.svg) no-repeat;
+}
+
+.example9 .login p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--gray55);
+    margin: 0 0 0.8rem;
+}
+
+.example9 .login input {
+    width: 100%;
+    height: 4.7rem;
+    padding: 0 1.6rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--black1e);
+    border: 1px solid var(--grayd6);
+    border-radius: 3rem;
+    margin: 0 0 1.6rem;
+    box-sizing: border-box;
+}
+
+.example9 .login input::placeholder {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--graya5);
+}
+
+.example9 .button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.example9 .button .chk-box {
+    align-self: center;
+    margin: 0 0 1.5rem;
+}
+
+.example9 .button .chk-box input {
+    display: none;
+}
+
+.example9 .button .chk-box input:checked+label {
+    background: url(../images/ico_ex9_chk_yes_24.svg) no-repeat left center/2rem auto;
+}
+
+.example9 .button .chk-box label {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--gray55);
+    padding: 0 0 0 3rem;
+    background: url(../images/ico_ex9_chk_no_24.svg) no-repeat left center/2rem auto;
+}
+
+.example9 .button button:active {
+    background: var(--black1e);
+}
+
+.example9 .button button {
+    grid-column: 1 / 4;
+    width: 100%;
+    height: 4.7rem;
+    margin: 0 0 1.3rem;
+    background: var(--grayc0);
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--white);
+}
+
+.example9 .button a {
+    grid-column: 1 / 4;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: var(--black1e);
+    padding: 0 0 0 1.2rem;
+    box-sizing: border-box;
+}
+
+/* 예제10 */
+
+.example10 {
+    padding: 1.6rem;
+}
+
+.example10 ul {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem 1.5rem;
+    margin: 0 0 19.4rem;
+}
+
+.example10 .img {
+    position: relative;
+}
+
+.example10 img {
+    background: var(--graye5);
+    width: 100%;
+    border-radius: 1.2rem;
+}
+
+.example10 .sticker {
+    position: absolute;
+    top: 1.0rem;
+    left: 1.3rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--white);
+    background: var(--black1e);
+    border-radius: 0.3rem;
+    padding: 0.1rem 0.4rem;
+}
+
+.example10 button {
+    position: absolute;
+    top: 32vw;
+    right: 1.2rem;
+    content: "";
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url(../images/ico_ex10_addcart.svg) no-repeat;
+}
+
+.example10 ul .title {
+    font-size: 13px;
+    line-height: 18px;
+    color: #1E2530;
+    margin: 0.8rem 0 0.3rem;
+}
+
+.example10 ul .discount {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FF3D45;
+    margin: 0 0 0.2rem;
+}
+
+.example10 ul .price .line {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    color: #838A93;
+}
+
+.example10 ul .price {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #1E2530;
+    margin: 0 0 0.2rem;
+}
+
+.example10 ul .benefit {
+    font-size: 11px;
+    line-height: 16px;
+    color: #1E2530;
+    margin: 0 0 0.3rem;
+}
+
+.example10 ul .count {
+    font-size: 11px;
+    line-height: 16px;
+    color: #FF6A13;
+}
+
+/* 예제11 */
+
+.example11 nav {
+    padding: 1.6rem;
+
+}
+
+.example11 ul {
+    background: var(--graye5);
+    border-radius: 3rem;
+    padding: 0.4rem 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.example11 li button {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--gray55);
+    width: 100%;
+    height: 3.9rem;
+    border-radius: 3rem;
+    background: var(--graye5);
+}
+
+/* .example11 li button:active{
+    background:var(--white);
+    border-radius: 3rem;
+    color: var(--black06);
+} */
+.example11 li .select {
+    background: var(--white);
+    border-radius: 3rem;
+    color: var(--black06);
+}
+
+/* 예제12 */
+
+.example12 {
+    padding: 0.9rem;
+}
+
+.example12 p label {
+    font-size: 1.3rem;
+    color: var(--gray66);
+    margin: 0 0 0.5rem;
+}
+.example12 p {
+    font-size: 1.3rem;
+    color: var(--gray66);
+    margin: 0 0 0.5rem;
+}
+
+.example12 input {
+    width: 100%;
+    height: 4.3rem;
+    background: var(--grayfa);
+    border: 0.1rem solid var(--graye1);
+    margin: 0 0 1.5rem;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+.example12 select {
+    appearance: none;
+    background: url(../images/ico_ex12_arrow_down.svg) no-repeat right 1.5rem center/ 1.1rem var(--grayfa);
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 4.3rem;
+    border: 0.1rem solid var(--graye1);
+    font-size: 1.3rem;
+    line-height: 100%;
+    color: var(--graycc);
+}
+
+.example12 textarea {
+    padding: 1.5rem 1.5rem;
+    resize: none;
+    width: 100%;
+    height: 20rem;
+    background: var(--grayfa);
+    border: 0.1rem solid var(--graye1);
+    box-sizing: border-box;
+}
+
+.example12 ::placeholder {
+    font-size: 1.3rem;
+    line-height: 100%;
+    color: var(--graycc);
+}
+
+.example12 .select-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.example12 .select-box input {
+    grid-column: 1 / 3;
+    padding: 0 1.5rem;
+}
+
+.example12 .btn-box {
+    display: grid;
+    margin: 4rem 0 0;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.example12 .btn-box .yellow {
+    align-self: center;
+    justify-self: end;
+    width: 9rem;
+    height: 3.5rem;
+    background: var(--white);
+    border: 0.1rem solid var(--yellowfa);
+    color: var(--yellowfa);
+    border-radius: 5.4rem;
+}
+
+.example12 .btn-box button {
+    align-self: center;
+    justify-self: start;
+    width: 9rem;
+    height: 3.5rem;
+    background: var(--white);
+    border: 0.1rem solid var(--graye0);
+    color: var(--black00);
+    border-radius: 5.4rem;
+}
+
+/* 예제13 */
+
+.example13 {
+    padding: 1.6rem;
+}
+
+.example13 p {
+    font-size: 1.3rem;
+    line-height: 180%;
+    color: var(--gray66);
+    margin: 0.5rem;
+}
+
+.example13 p span {
+    color: var(--yellowfd);
+}
+
+.example13 thead tr {
+    border: 1px solid var(--graye1);
+    border-bottom: 1px solid var(--gray33);
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.example13 tbody tr {
+    border-bottom: 1px solid var(--graye1);
+}
+
+.example13 tbody .select {
+    font-weight: 500;
+    color: var(--gray33);
+    background: var(--grayfc);
+}
+
+.example13 th {
+    height: 4.15rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 100%;
+    color: var(--gray33);
+}
+
+.example13 td {
+    height: 4.25rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 100%;
+    color: #666666;
+}
+
+.example13 a {
+    text-align: left;
+    /* width:20.55rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden; */
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    /* line-height: ; */
+}
+
+/* 
+    width: 100vw;
+    %는 일반요소에 안들어가서 
+    position을 써야하기때문에 vh를 쓴다
+    height: 100vh;
+*/
+
+.example13 .btn-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.example13 .btn-bottom .more-view::after {
+    display: inline-flex;
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0 0 0 0.25rem;
+    background: url(../images/ico_ex13_moreview_black_6.svg) no-repeat;
+}
+
+.example13 .btn-bottom .more-view {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.45rem;
+    color: var(--black00);
+    width: 100%;
+    height: 4.5rem;
+    background: var(--white);
+    border: 1px solid var(--gray99);
+}
+
+.example13 .btn-bottom .write {
+    justify-self: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 100%;
+    letter-spacing: -0.02rem;
+    width: 9rem;
+    height: 3.5rem;
+    background: var(--white);
+    border: 1px solid var(--yellowfa);
+    border-radius: 5.4rem;
+    color: var(--yellowfa);
+}
+
+/* 예제14 */
+
+.example14 {
+    padding: 0 2.3rem;
+}
+
+.example14 h3 {
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 3.35rem;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: var(--yellowfa);
+    margin: 0 0 0.7rem;
+}
+
+.example14 .copy_1 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray33);
+    margin: 0 0 0.5rem;
+}
+
+.example14 .copy_2 {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray33);
+    margin: 0 0 3rem;
+}
+
+.example14 .input-box {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: minmax(1rem, 1fr);
+}
+
+.example14 input::placeholder {
+    font-weight: 300;
+    letter-spacing: -0.05em;
+    color: var(--gray66);
+}
+
+.example14 input {
+    height: 5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 100%;
+    color: var(--gray33);
+    padding: 0 1rem;
+    background: var(--grayfa);
+    border: 1px solid var(--graye1);
+}
+
+.example14 .none {
+    display: none;
+}
+
+.example14 .none:checked+.chk-box {
+    background: url(../images/ico_ex14_chk_yes_16.svg) no-repeat left center;
+}
+
+.example14 .chk-box {
+    margin: 1.35rem 0 2.85rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: -0.05em;
+    color: var(--gray66);
+    padding: 0 0 0 2.6rem;
+    background: url(../images/ico_ex14_chk_no_16.svg) no-repeat left center;
+}
+
+.example14 button {
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 180%;
+    letter-spacing: -0.06em;
+    color: var(--white);
+    width: 100%;
+    height: 5rem;
+    background: var(--gray33);
+}
+
+.example14 nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.example14 nav ul a {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 180%;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: var(--gray66);
+}
+
+.example14 nav ul li .line-none::after {
+    display: none;
+}
+
+.example14 nav ul li a::after {
+    content: "";
+    display: inline-flex;
+    vertical-align: 0.5rem;
+    align-items: center;
+    margin: 0 1rem;
+    width: 0.1rem;
+    height: 1.2rem;
+    background: url(../images/img_ex14_line_12.png) no-repeat;
+}

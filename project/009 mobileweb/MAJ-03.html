@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상담신청</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header white">
+        <h1 class="h1">상담신청</h1>
+        <button class="btn-prev"><span class="hide">뒤로가기</span></button>
+        <div class="right">
+        </div>
+    </header>
+    <main>
+        <div class="mobile-space mt24">
+            <div class="application-form">
+                <table class="table-type3">
+                    <caption class="hide">상담신청</caption>
+                    <colgroup>
+                        <col style="width:8.8rem">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="vm">이름</th>
+                            <td>한성영</td>
+                        </tr>
+                        <tr>
+                            <th><label for="txt1_1">이메일</label></th>
+                            <td>
+                                <div>
+                                    <input type="text" id="txt1_1" placeholder="hunet@hunet.co.kr">
+                                    <p class="mt4">*답변은 이메일로 빌송되며, 연수원 웹사이트를 통해서도 확인하실 수 있습니다.
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="vm"><label for="select1_1">구분</label></th>
+                            <td>
+                                <select id="select1_1">
+                                    <option>선택해 주세요</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>과정</th>
+                            <td>
+                                <div>
+                                    <input type="radio" name="rag1" id="ra1_1" class="hide radio-type1"
+                                        title="정형"><label for="ra1_1">정형</label>
+                                    <input type="radio" name="rag1" id="ra1_2" class="hide radio-type1"
+                                        title="비정형"><label for="ra1_2">비정형</label>
+                                </div>
+                                <select title="과정선택" class="mt6">
+                                    <option value="">선택해 주세요</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="vm"><label for="txt1_2">제목</label></th>
+                            <td><input type="text" id="txt1_2"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <img src="images/img_textarea.png" alt="" class="textarea">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="fix-bottom type3 mt48">
+                    <button class="btn-blue write align center">문의하기</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

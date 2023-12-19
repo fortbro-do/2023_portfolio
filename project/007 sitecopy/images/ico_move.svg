@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <style>
+            .cls-2,.cls-4,.cls-6{fill:none}.cls-2,.cls-4{stroke:#000;stroke-width:1.5px}.cls-2{stroke-linecap:round;stroke-linejoin:round}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="icon_이사" transform="translate(10 2.107)">
+        <g id="그룹_163" data-name="그룹 163" transform="translate(-787.047 -1770.178)">
+            <path id="패스_51" data-name="패스 51" class="cls-2" d="m6390.813 1777.429 6.931-5.884 7.069 6" transform="translate(-5604.266 10.633)"/>
+            <path id="패스_52" data-name="패스 52" class="cls-2" d="M6393.563 1777.582v7.386h10v-7.687" transform="translate(-5605.023 9.21)"/>
+            <path id="패스_53" data-name="패스 53" d="M6399.156 1785.079v-2.392" transform="translate(-5605.619 8.905)" style="stroke-linecap:round;stroke:#000;stroke-width:1.5px;fill:none"/>
+            <path id="패스_54" data-name="패스 54" class="cls-2" d="M6414.469 1777h10.988l2.018 8.649v6.2" transform="translate(-5608.459 9.028)"/>
+            <path id="패스_55" data-name="패스 55" class="cls-2" d="M6422.407 1777.313v8.994h6.8" transform="translate(-5610.865 9.015)"/>
+            <g id="타원_17" data-name="타원 17" class="cls-2" transform="translate(787.11 1798.59)">
+                <circle class="cls-5" cx="4.74" cy="4.74" r="4.74"/>
+                <circle class="cls-6" cx="4.74" cy="4.74" r="3.99"/>
+            </g>
+            <g id="타원_18" data-name="타원 18" class="cls-2" transform="translate(806.444 1798.59)">
+                <circle class="cls-5" cx="4.74" cy="4.74" r="4.74"/>
+                <circle class="cls-6" cx="4.74" cy="4.74" r="3.99"/>
+            </g>
+            <path id="패스_56" data-name="패스 56" class="cls-2" d="M6390.344 1789.5H6385v-24h22v23.81h-9.937" transform="translate(-5601.953 11.571)"/>
+            <path id="패스_57" data-name="패스 57" class="cls-4" d="M6429.653 1796.2h-4.562" transform="translate(-5610.606 4.678)"/>
+            <path id="패스_58" data-name="패스 58" class="cls-4" d="M6415.519 1796.641h-3.859" transform="translate(-5607.71 4.241)"/>
+        </g>
+    </g>
+</svg>

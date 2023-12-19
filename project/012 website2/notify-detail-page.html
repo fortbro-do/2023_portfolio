@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_01_공지사항_상세페이지</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#content" class="skip-navigation">본문바로가기</a>
+    <header class="header">
+        <div class="header__web">
+            <div class="header__link">
+                <h1><span class="link"></span>
+
+                    <a
+                        href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/index.html">
+                        <img src="images/img_logo.png" alt="REBEHAYAN">
+                    </a>
+                </h1>
+                <h2 class="hide">전체메뉴</h2>
+                <nav>
+
+                    <ul class="header__gnb">
+                        <li>
+                            <span class="hover"></span>
+                            <a href="#none">소년소녀부</a>
+                            <div>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a href="#none"> 소년소녀부 소개</a>
+                                        <ul class="drop-menu-detail ">
+                                            <li><span class="link"></span><a
+                                                    href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/history.html">
+                                                    선생님과의 역사
+                                                </a></li>
+                                            <li><span class="link"></span><a
+                                                    href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/goals.html">
+                                                    활동방향
+                                                </a></li>
+                                            <li><span class="link"></span><a
+                                                    href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/character.html">
+                                                    캐릭터 소개
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li><span class="link"></span><a
+                                            href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/sunrise.html">해돋이
+                                            부원회</a></li>
+                                    <li><span class="link"></span><a
+                                            href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/sunrise2.html">해돋이
+                                            합창그룹</a></li>
+                                    <li>
+                                        <a href="#none">인재육성 그룹</a>
+                                        <ul class="drop-menu-detail">
+                                            <li><span class="link"></span><a
+                                                    href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/sunrise3.html">광역
+                                                    해돋이 합창단
+                                                </a></li>
+                                            <li><span class="link"></span><a
+                                                    href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/sunrise4.html">글로리아
+                                                    리틀챔버 오케스트라</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hover"></span>
+                            <a href="#none">미래부</a>
+                            <div>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a href="#none"> 미래부 소개</a>
+
+                                    </li>
+                                    <li><a href="#none">미래부 부원회</a></li>
+                                    <li>
+                                        <a href="#none">인재육성 그룹</a>
+                                        <ul class="drop-menu-detail">
+                                            <li><a href="#none">정의성운그룹
+                                                </a></li>
+                                            <li><a href="#none">청엽신생그룹</a></li>
+                                            <li><a href="#none">신세기 파이오니아 윈드앙상블</a></li>
+                                            <li><a href="#none">아리랑고적대</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hover"></span>
+                            <a href="#none">미래본부 및 사명회</a>
+                            <div>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <span class="link"></span><a
+                                            href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/notify-list.html">
+                                            공지사항</a>
+                                    </li>
+                                    <li><span class="link"></span><a
+                                            href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/speech.html">스피치</a>
+                                    </li>
+                                    <li><a href="#none">매뉴얼 및 조직도</a></li>
+                                    <li><a href="#none">활동방향</a></li>
+                                    <li><a href="#none">부원회 운영자료</a>
+                                        <ul class="drop-menu-detail ">
+                                            <li><a href="#none">
+                                                    본부 등재자료
+                                                </a></li>
+                                            <li><a href="#none">
+                                                    미래부 신문
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">미래본부 회의록</a>
+                                        <ul class="drop-menu-detail">
+                                            <li><a href="#none">회의록 작성
+                                                </a></li>
+                                            <li><a href="#none">참석결과 등록</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hover"></span>
+                            <a href="#none">교육부</a>
+                            <div>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a href="#none"> 교육부 소개 및 활동방향</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">교육부 커뮤니티</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hover"></span>
+                            <a href="#none">미래부 자료실</a>
+                            <div>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a href="#none"> 미디어자료</a>
+                                        <ul class="drop-menu-detail">
+                                            <li><a href="#none">본부 영상물</a></li>
+                                            <li><a href="#none">불교설화 애니</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">미래부 스피치</a>
+                                        <ul class="drop-menu-detail">
+                                            <li>
+                                                <a href="#none">
+                                                    미래부 7지침
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">
+                                                    미래데이
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hover"></span>
+                            <a href="#none">커뮤니티</a>
+                            <div>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a href="#none"> 갤러리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">현장게시판</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">질의응답</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <h2 class="hide">로그인 및 사이트맵</h2>
+            <div class="header__btn-box">
+                <span class="click"></span><button
+                    onclick="window.location.href='http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/login.html';"
+                    class="header__btn_login">로그인</button>
+                <button class="header__btn_sitemap">사이트맵</button>
+            </div>
+        </div>
+        <div class="header__mobile">
+            <h1><span class="link"></span>
+                <a
+                    href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/index.html">
+                    <img src="images/img_logo-white.png" alt="REBEHAYAN">
+                </a>
+            </h1>
+            <h2 class="hide">검색 및 메뉴</h2>
+            <button class="btn_search"><span class="hide">검색</span></button>
+            <button class="btn_menu"><span class="hide">메뉴</span></button>
+        </div>
+    </header>
+    <div class="drop-menu__bg"></div>
+    <main id="content">
+        <div class="notify">
+            <div class="page-title">
+                <div>
+                    <h2>미래본부 및 사명회 </h2>
+                    <span>‘지지 않는 마음’을 품은 태양
+                        초등 소년소녀부
+                    </span>
+                </div>
+                <div>
+                    <img src="images/img_character2.png" alt="">
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <ul class="list-type4">
+                    <li>
+                        <a href="#none" class="list-type4__home">홈</a>
+                    </li>
+                    <li>
+                        <a href="#none" class="list-type4__type">미래본부 및 사명회</a>
+                    </li>
+                    <li>
+                        <a href="#none" class="list-type4__page-info">공지사항</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-select ">
+                <div class="select active">
+                    <button><span class="hide">선택</span>미래본부 및 사명회<span class="click"></span></button>
+                    <ul class="select__list depth1">
+                        <li><span class="link"></span><a
+                                href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/history.html">소년소녀부</a>
+                        </li>
+                        <li><a href="#none">미래부</a></li>
+                        <li><a href="#none" class="active">미래본부 및 사명회</a></li>
+                        <li><a href="#none">교육부</a></li>
+                        <li><a href="#none">미래부 자료실</a></li>
+                        <li><a href="#none">커뮤니티</a></li>
+                    </ul>
+                </div>
+                <div class="select-detail active">
+                    <button><span class="hide">선택</span>공지사항<span class="click"></span></button>
+                    <ul class="select__list depth2">
+                        <li>
+                            <span class="link"></span> <a
+                                href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/notify-list.html"
+                                class="active">공지사항</a>
+                        </li>
+                        <li><span class="link"></span><a
+                                href="http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/speech.html">스피치</a>
+                        </li>
+                        <li><a href="#none">매뉴얼 및 조직도</a></li>
+                        <li><a href="#none">활동방향</a></li>
+                        <li>
+                            <a href="#none">부원회 운영자료</a>
+                            <ul>
+                                <li><a href="#none">ㆍ본부 등재 자료</a>
+                                <li><a href="#none">ㆍ미래부 신문</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">미래본부 회의록</a>
+                            <ul>
+                                <li><a href="#none">ㆍ회의록 작성</a>
+                                <li><a href="#none">ㆍ참석결과 등록</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-content">
+                <div class="notify_detail-pagre">
+                    <h3 class="h3">- 공지사항 -</h3>
+                    <p class="subtitle">미래부의 성장이 학회의 장래를 결정합니다. </p>
+                    <div class="board-view">
+                        <div class="board-view__header">
+                            <h4 class="board-view__title">2020년 12월 해돋이 신문 요청자료에 대한 답변드립니다. 글 내용을 확인하세요.</h4>
+                            <div class="board-view__info">
+                                <span class="board-view__date">2020-10-22</span>
+                                <span class="board-view__hit"><span class="hide">조회수</span>2,541 </span>
+                            </div>
+                        </div>
+                        <div class="board-view__content">
+                            미래부 중에는 지역에서 열리는 좌담회나 회합에서 ‘소년소녀 희망신문’의 ‘사자왕(師子王) 어서’를 낭독하는 멤버가 많습니다. <br>
+                            한 멤버가 “학회 회합에서는 왜 늘 어서를 공부하나요?” 하고 질문을 보내왔습니다. <br>
+                            SGI 회장 잘 알고 있네요!
+                            학회는 언제나 ‘어서근본’으로 전진하고 있습니다. <br>
+                            어서에는 인생을 여는 승리의 철학이 있습니다. <br>
+                            최고의 지혜의 샘이 있고 불굴의 용기를 불러일으키는 힘이 있습니다. <br><br>
+                            <img src="images/img_thumb-notify.png" alt="">
+                            <br><br>
+                            지난달 27일에는 권태성 강북권 지역남자부장(왼쪽 사진 왼쪽)이 류시형 지부남자부장을 만나 따뜻한 대화를 이어갔다. <br>
+                            권 씨는 평소 취업 문제로 고민하는 남자부원들에게 조언을 아끼지 않았다고. 이날 역시 류 씨를 만나 취업과 관련한 여러 화제로 대화를 이끌어가며 격려했다. <br>
+                            박정현 금정권 지역여자부장도 지난달 31일, 정재희 지부여자부장을 만났다. <br><br>
+
+                            박정현 지역여자부장(오른쪽 사진 오른쪽)은 ‘청년육성 우호기간’ 동안 매주 온라인으로 어서를 공부하고, 한 주간의 도 전을 다지는 지역 단위 육성프로그램을 운영했다.
+                            <br>
+                            그리고 이날 정재희 지부여자부장을 만나 “지금이 ‘유사시’인 만큼, 이케다 선생님과 학회에 대 한 ‘보은’의 마음을 잊지 않고 사명에 끝까지 도전하자”고 말했다.
+                            <br>
+                            이에 정재희 지부여자부장은 신심에 헛됨이 없다는 것을 확신하며 자신이 격려 받은 만큼 지부 멤 버들에게 격려의 대화를 넓힐 것을 다짐했다.
+                        </div>
+                        <div class="board-view__paging">
+                            <div class="board-view__prev">
+                                <a href="#none">
+                                    <span>이전글</span>
+                                    <p>10월 해돋이 행사 식순자료 업데이트 되었습니다.</p>
+                                </a>
+                            </div>
+                            <div class="board-view__next">
+                                <a href="#none">
+                                    <span>다음글</span>
+                                    <p>자료가 없습니다</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn-gray">수정</button>
+                        <button class="btn-gray btn-delete">삭제</button>
+                        <button
+                            onclick="window.location.href='http://doyoung.dothome.co.kr/012%20%EA%B8%B0%EC%97%85%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8/notify-list.html';"
+                            class="btn-yellow align vm">목록</button>
+                        <span class="click"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-bt">
+            <img src="images/img_banner1.png" alt="" class="mt20">
+            <span class="hide">법화경 평화와 공생의 메시지展 석존이 설한 불교의 다양한 가르침 중 만인성불을 실현하는 완전한 가르침</span>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">리베하얀</div>
+        <div class="footer__address">
+            <p>(06586) 서울특별시 구로구 공원로 66 리베하얀 </p><em>·</em>
+            <p> (06586) 66, Gongwon-ro, Guro-gu, Seoul, Korea</p>
+        </div>
+        <div class="footer__number">
+            <span>TEL : 1566-1234</span><em>•</em>
+            <span>FAX : 02-5555-7300</span>
+        </div>
+        <p class="footer__copy">Copyright <span>ⓒ</span> Rebehayan. All rights reserved. </p>
+    </footer>
+    <div class="dialog" style="--zindex:30;">
+        <button class="btn-close"><span class="hide">닫기</span></button>
+        <h2 class="dialog__title">삭제하시겠습니까?</h2>
+        <p class="dialog__txt br">삭제된 글은 복구가 불가능합니다. <br>
+            정말로 삭제하시겠습니까?</p>
+        <button class="btn-gray btn-cancle">취소</button>
+        <button class="btn-yellow">삭제</button>
+    </div>
+    <div class="dimed" style="--zindex:29;"></div>
+
+</body>
+
+</html>

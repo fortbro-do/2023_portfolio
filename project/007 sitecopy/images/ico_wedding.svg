@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <style>
+            .cls-2,.cls-4{fill:none}.cls-4{stroke:#000000;stroke-width:1.5px;stroke-linejoin:round}.cls-5,.cls-6{stroke:none}.cls-6{fill:#000000}
+        </style>
+    </defs>
+    <g id="icon_wedding" transform="translate(13 5)">
+        <g id="그룹_694" data-name="그룹 694" transform="translate(-2)">
+            <g id="그룹_96" data-name="그룹 96" transform="translate(2.795)">
+                <g id="패스_60" data-name="패스 60" class="cls-2">
+                    <path class="cls-5" d="m10.26 0 10.149 11.912-3.374 4.988H3.485L0 11.912z" transform="rotate(180 10.204 8.45)"/>
+                    <path class="cls-6" d="m10.254 2.306-8.357 9.702 2.37 3.392h11.972l2.289-3.384-8.274-9.71M10.26 0l10.15 11.912-3.375 4.988H3.485L0 11.912 10.26 0z" transform="rotate(180 10.204 8.45)"/>
+                </g>
+                <path id="패스_61" data-name="패스 61" d="M6238.124 1765.219h17.732" transform="translate(-6237.119 -1760.319)" style="stroke:#000000;stroke-width:1.5px;fill:none"/>
+                <path id="패스_63" data-name="패스 63" class="cls-4" d="m6243.575 1760.967 3.614 4.5-3.813 9.77" transform="translate(-6232.859 -1760.189)"/>
+                <path id="패스_71" data-name="패스 71" class="cls-4" d="m6246.989 1760.967-3.615 4.5 3.814 9.77" transform="translate(-6237.243 -1760.189)"/>
+            </g>
+            <g id="패스_70" data-name="패스 70" class="cls-2">
+                <path class="cls-5" d="M9 0a9 9 0 1 1-9 9 9 9 0 0 1 9-9z" transform="translate(4 17)"/>
+                <path class="cls-6" d="M9 1.5C4.864 1.5 1.5 4.864 1.5 9s3.364 7.5 7.5 7.5 7.5-3.364 7.5-7.5S13.136 1.5 9 1.5M9 0a9 9 0 1 1 0 18A9 9 0 0 1 9 0z" transform="translate(4 17)"/>
+            </g>
+            <g id="패스_72" data-name="패스 72" class="cls-2">
+                <path class="cls-5" d="M13 0A13 13 0 1 1 0 13 13 13 0 0 1 13 0z" transform="translate(0 13)"/>
+                <path class="cls-6" d="M13 1.5c-3.072 0-5.96 1.196-8.132 3.368A11.425 11.425 0 0 0 1.5 13c0 3.072 1.196 5.96 3.368 8.132A11.425 11.425 0 0 0 13 24.5c3.072 0 5.96-1.196 8.132-3.368A11.425 11.425 0 0 0 24.5 13c0-3.072-1.196-5.96-3.368-8.132A11.425 11.425 0 0 0 13 1.5M13 0c7.18 0 13 5.82 13 13s-5.82 13-13 13S0 20.18 0 13 5.82 0 13 0z" transform="translate(0 13)"/>
+            </g>
+        </g>
+    </g>
+</svg>

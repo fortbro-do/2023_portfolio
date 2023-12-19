@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피드-팔로잉 / 밀리의서재</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/default.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="fixed-top">
+            <h1 class="logo">
+                <img src="images/img_logo.png" alt="millie">
+            </h1>
+            <h2 class="none">상단메뉴</h2>
+            <nav class="header__top  none">
+                <ul class="header__nav__btn">
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html">NOW</a></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/story.html">스토리</a></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/millie-road-recomand.html" class="header__nav__btn--active">밀리로드</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="header-bottom fixed-bottom">
+            <ul class="nav-buttom">
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html" class="btn-today ">투데이</a><span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html" class="brn-feed nav-buttom--active">피드</a><span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/search.html" class="btn-search">검색</a><span class="link"></span></li>
+                <li><a href="" class="btn-mylibrary">내서재</a></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/account-management.html" class="btn-management">관리</a><span class="link"></span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="hide">팔로잉</h2>
+            <div class="category-btn-type4 mobile-space mt48 ">
+                <ul class="align">
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html">추천</a><span class="link"></span></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-following.html" class="active">팔로잉</a><span class="link"></span></li>
+                </ul>
+                <button class="write-btn"><span class="hide">글쓰기</span></button>
+            </div>
+        </section>
+        <section class="mobile-space">
+            <div class="title-link title-link__type2">
+                <a href="#none">
+                    <h2>밀리 회원들은 <br>지금 이런 책을 읽고 있어요<span class="hide">자세히보기</span></h2>
+                </a>
+            </div>
+            <div class="card-list-type8">
+                <div class="swiper slide1 mt15">
+                    <ul class="swiper-wrapper  book-list  ">
+                        <li class="swiper-slide">
+                            <a href="#none">
+                                <div class="book-list__img1 relative">
+                                    <div class="book-list__badge1 pdf"></div>
+                                    <div class="book-list__badge2 pdf hide"></div>
+                                </div>
+                                <p class="book-list__title">뼈의기록</p>
+                                <div class="book-list__info">
+                                    <p class="book-list__writer">천선란</p>
+                                    <p class="book-list__time hide">79% <span class="line"></span> 53분</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#none">
+                                <div class="book-list__img1 relative">
+                                    <div class="book-list__badge1 pdf hide"></div>
+                                    <div class="book-list__badge2 pdf hide"></div>
+                                </div>
+                                <p class="book-list__title">뼈의기록</p>
+                                <div class="book-list__info">
+                                    <p class="book-list__writer">천선란</p>
+                                    <p class="book-list__time hide">79% <span class="line"></span> 53분</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#none">
+                                <div class="book-list__img1 relative">
+                                    <div class="book-list__badge1 pdf hide"></div>
+                                    <div class="book-list__badge2 pdf hide"></div>
+                                </div>
+                                <p class="book-list__title">뼈의기록</p>
+                                <div class="book-list__info">
+                                    <p class="book-list__writer">천선란</p>
+                                    <p class="book-list__time hide">79% <span class="line"></span> 53분</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#none">
+                                <div class="book-list__img1 relative">
+                                    <div class="book-list__badge1 pdf hide"></div>
+                                    <div class="book-list__badge2 pdf hide"></div>
+                                </div>
+                                <p class="book-list__title">뼈의기록</p>
+                                <div class="book-list__info">
+                                    <p class="book-list__writer">천선란</p>
+                                    <p class="book-list__time hide">79% <span class="line"></span> 53분</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#none">
+                                <div class="book-list__img1 relative">
+                                    <div class="book-list__badge1 pdf hide"></div>
+                                    <div class="book-list__badge2 pdf hide"></div>
+                                </div>
+                                <p class="book-list__title">뼈의기록</p>
+                                <div class="book-list__info">
+                                    <p class="book-list__writer">천선란</p>
+                                    <p class="book-list__time hide">79% <span class="line"></span> 53분</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#none">
+                                <div class="book-list__img1 relative">
+                                    <div class="book-list__badge1 pdf hide"></div>
+                                    <div class="book-list__badge2 pdf hide"></div>
+                                </div>
+                                <p class="book-list__title">뼈의기록</p>
+                                <div class="book-list__info">
+                                    <p class="book-list__writer">천선란</p>
+                                    <p class="book-list__time hide">79% <span class="line"></span> 53분</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#none">
+                                <div class="book-list__img1 relative">
+                                    <div class="book-list__badge1 pdf hide"></div>
+                                    <div class="book-list__badge2 pdf hide"></div>
+                                </div>
+                                <p class="book-list__title">뼈의기록</p>
+                                <div class="book-list__info">
+                                    <p class="book-list__writer">천선란</p>
+                                    <p class="book-list__time hide">79% <span class="line"></span> 53분</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mobile-space" style="margin-bottom: 7rem;">
+            <div class="title-link title-link__type2">
+                <a href="#none">
+                    <h2>아직 팔로우 하는 서재가 없어요. <br>
+                        맘에 드는 서재를 팔로우 해볼까요?<span class="hide">자세히보기</span></h2>
+                </a>
+            </div>
+            <div class="card-list-type14 mt15">
+                <div class="swiper follow-feed ">
+                    <ul class="swiper-wrapper align">
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?<span class="hide">자세히보기</span></p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ<span class="hide">자세히보기</span></p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?</p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ</p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?<span class="hide">자세히보기</span></p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ<span class="hide">자세히보기</span></p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <div class="content-link mt11">
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리에서 '역주행'하는 <br>책이 있다고?</p>
+                                </a>
+                                <a href="#none">
+                                    <div></div>
+                                    <p>밀리 회원들의 서재에 가 <br>장 많이 담긴 도서가 등ㄹㅇㄴㄹㄴ</p>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

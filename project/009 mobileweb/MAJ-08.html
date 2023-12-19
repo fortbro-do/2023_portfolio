@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header white">
+        <h1 class="h1">회원가입</h1>
+        <button class="btn-prev"></button>
+        <div class="right">
+        </div>
+    </header>
+    <main>
+        <div class="mobile-space mt24">
+            <div class="join">
+                <h3 class="h3 line-bottom">개인정보 입력</h3>
+                <table class="table-type3 mt12">
+                    <caption class="hide">개인정보</caption>
+                    <colgroup>
+                        <col style="width: 9rem;">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="vm">이름<span class="required">*</span></th>
+                            <td>한성영</td>
+                        </tr>
+                        <tr>
+                            <th class="vm">생년월일<span class="required">*</span></th>
+                            <td>1976</td>
+                        </tr>
+                        <tr>
+                            <th class="vm">성별<span class="required">*</span></th>
+                            <td>남</td>
+                        </tr>
+                        <tr>
+                            <th class="vm">가입여부확인</th>
+                            <td>가입가능</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 class="h3 line-bottom mt48">회원 입력</h3>
+                <table class="table-type3 mt12">
+                    <caption class="hide">회원정보</caption>
+                    <colgroup>
+                        <col style="width: 9rem;">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th><label for="txt2_1">아이디 <span class="required">*</span></label></th>
+                            <td>
+                                <input type="text" id="txt2_1">
+                                <p class="mt4">※ 영문, 숫자 또는 둘을 조합하여 4~16자 이내로 입력해주세요.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="txt2_2">비밀번호 <span class="required">*</span></label></th>
+                            <td>
+                                <input type="text" id="txt2_2">
+                                <p class="mt4">비밀번호를 입력해주세요, 비밀번호를 잘못 입력할 수 있으니 정확하게 입력해주세요.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="txt3_2">비밀번호확인<span class="required">*</span></label></th>
+                            <td>
+                                <input type="text" id="txt3_2">
+                                <p class="mt4">비밀번호를 다시 한번 입력해주세요.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="txt4_2">이메일 <span class="required">*</span></label></th>
+                            <td>
+                                <input type="text" id="txt4_2">
+                                <p class="mt4">수강관련 정보, 비밀번호 찾기, 학습 독려를 위해 필요한 정보이니 정확히 입력해주세요.
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>휴대전화번호<span class="required">*</span></th>
+                            <td>
+                                <div class="tel">
+                                    <select title="번호 앞자리">
+                                        <option value="">010</option>
+                                    </select>
+                                    <input type="number" title="번호 가운데">
+                                    <input type="number" title="번호 뒷자리">
+                                </div>
+                                <p class="mt4">학습 독려를 위해 필요한 정보이니 정확히 입력해주세요.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>전화번호</th>
+                            <td class="tel">
+                                <select title="번호 앞자리">
+                                    <option value="">010</option>
+                                </select>
+                                <input type="number" title="번호 가운데">
+                                <input type="number" title="번호 뒷자리">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>주소</th>
+                            <td>
+                                <div class="address">
+                                    <input type="text" title="우편번호">
+                                    <button class="btn-zipcode">우편번호찾기</button>
+                                    <input type="text" title="상세주소" class="detail-address">
+                                    <input type="text" title="나머지주소" class="detail-address" placeholder="상세주소를 입력하세요.">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-type1 mt12 chk-info">
+                    <p class="txt-center">위 개인정보를 본인이 제공하는 것에 대해 <br>
+                        ‘개인정보처리방침’을 확인하고 동의합니다.
+                    </p>
+                    <div>
+                        <div class="align both mt12 vm">
+                            <input type="checkbox" id="chk_1" class="hide check-type1"><label for="chk_1">(필수) 개인정보 수집 및
+                                이용
+                                동의</label>
+                            <a href="#none" class="btn-view-content">내용보기</a>
+                        </div>
+                        <div class="align both mt12 vm">
+                            <input type="checkbox" id="chk_2" class="hide check-type1"><label for="chk_2">(필수) 개인정보 처리방침
+                                동의</label>
+                            <a href="#none" class="btn-view-content">내용보기</a>
+                        </div>
+                    </div>
+                    <div class="btn-join mt22">
+                        <button class="btn-blue write">가입하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

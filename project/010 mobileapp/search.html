@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색화면 / 밀리의서재</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/default.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="fixed-top">
+            <h1 class="logo">
+                <img src="images/img_logo.png" alt="millie">
+            </h1>
+            <nav class="header__top none">
+                <ul class="header__nav__btn">
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html">NOW</a>
+                    <span class="link"></span>
+                    </li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/story.html">스토리</a>
+                    <span class="link"></span>
+                    </li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/millie-road-recomand.html" class="header__nav__btn--active">밀리로드</a>
+                    <span class="link"></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h2 class="hide">하단메뉴</h2>
+        <nav class="header-bottom fixed-bottom">
+            <ul class="nav-buttom">
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html" class="btn-today ">투데이</a>
+                <span class="link"></span>
+                </li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html" class="brn-feed">피드</a>
+                <span class="link"></span>
+                </li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/search.html" class="btn-search nav-buttom--active">검색</a>
+                <span class="link"></span>
+                </li>
+                <li><a href="#none" class="btn-mylibrary">내서재</a></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/account-management.html" class="btn-management">관리</a>
+                <span class="link"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="search-bar fixed-top2">
+            <div>
+                <button title="검색버튼"><span class="hide">검색</span></button>
+                <input type="search" title="검색창" placeholder="검색어를 입력하세요" class="active">
+            </div>
+        </div>
+        <div class=" search-target ">
+            <div class="cover-menu">
+                <div class="btn-box-top">
+                    <p>검색대상</p>
+                    <ul>
+                        <li><button class="select">전체</button></li>
+                        <li><button>책 제목</button></li>
+                        <li><button>저자명</button></li>
+                        <li><button>출판사명</button></li>
+                        <li><button>리더명</button></li>
+                    </ul>
+                </div>
+                <div class="btn-box-bottom">
+                    <button class="cancel">취소</button>
+                    <button class="check">확인</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-space">
+            <section>
+                <h2 class="hide">인기검색어순위</h2>
+                <div class="rank-list search-rank">
+                    <div class="click-off">
+                        <ol>
+                            <li><a href="#none">
+                                    <span class="rank-num">1</span>
+                                    <p class="arrow-red">히가시노 게이고</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">2</span>
+                                    <p class="arrow-red">수학</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">3</span>
+                                    <p class="arrow-red">여행</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">4</span>
+                                    <p class="arrow-red">역행자</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">5</span>
+                                    <p class="arrow-blue">주식</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">6</span>
+                                    <p class="arrow-red">심리학</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">7</span>
+                                    <p class="arrow-red">영어</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">8</span>
+                                    <p class="arrow-blue">김진명</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">9</span>
+                                    <p class="arrow-red">세이노의 가르침</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">10</span>
+                                    <p class="arrow-red">몰입</p>
+                                </a></li>
+                            </ol>
+                            <button><span class="hide">펼쳐보기</span><span class="click"></span></button>
+                    </div>
+                    <div class="click-on">
+                        <div>
+                            <p>인기검색어<span class="line"></span> 20232.06.15.11:00 기준</p> <button><span class="hide">접기</span> <span class="click"></span></button>
+                        </div>
+                        <ol>
+                            <li><a href="#none">
+                                    <span class="rank-num">1</span>
+                                    <p class="arrow-red">히가시노 게이고</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">2</span>
+                                    <p class="arrow-red">수학</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">3</span>
+                                    <p class="arrow-red">여행</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">4</span>
+                                    <p class="arrow-red">역행자</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">5</span>
+                                    <p class="arrow-blue">주식</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">6</span>
+                                    <p class="arrow-red">심리학</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">7</span>
+                                    <p class="arrow-red">영어</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">8</span>
+                                    <p class="arrow-blue">김진명</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">9</span>
+                                    <p class="arrow-red">세이노의 가르침</p>
+                                </a></li>
+                            <li><a href="#none">
+                                    <span class="rank-num">10</span>
+                                    <p class="arrow-red">몰입</p>
+                                </a></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link__type2">
+                    <h2>밀리 추천 검색어</h2>
+                </div>
+                <div class="search-tag ">
+                    <ul>
+                        <li><a href="#none">김진명</a></li>
+                        <li><a href="#none">타로 우세</a></li>
+                        <li><a href="#none">스토너</a></li>
+                        <li><a href="#none">MBTI</a></li>
+                        <li><a href="#none">메타버스</a></li>
+                        <li><a href="#none">돈의 심리학</a></li>
+                        <li><a href="#none">만화</a></li>
+                        <li><a href="#none">비의도적 연애담</a></li>
+                        <li><a href="#none">시네마북</a></li>
+                        <li><a href="#none">임영웅</a></li>
+                        <li><a href="#none">언어학</a></li>
+                        <li><a href="#none">부자아빠</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <div class="title-link__type2">
+                        <h2>바로가기</h2>
+                    </div>
+                    <div class="quick-menu">
+                        <ul>
+                            <li><a href="#none" class="quick-menu1">베스트</a></li>
+                            <li><a href="#none" class="quick-menu2">한 달 이내 출간</a></li>
+                            <li><a href="#none" class="quick-menu3">공개 예정</a></li>
+                            <li><a href="#none" class="quick-menu4">종료 예정</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="category-nav active ">
+        <div class="category-btn-type4 border-top mt27 "></div>
+            <h2 class="hide">카테고리</h2>
+            <div class=" category-btn-type4">
+                <ul class="mt15 ">
+                    <li><a href="#none" class="active">카테고리</a></li>
+                    <li><a href="#none">오디오</a></li>
+                    <li><a href="#none">키워드</a></li>
+                    <li><a href="#none">컬렉션</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="mobile-space">
+            <section>
+                <div class="title-link__type2">
+                    <h2>카테고리</h2>
+                </div>
+                <div class="card-list-type15">
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <div class="category-type">
+                                    <p class="book-title">도슨트북</p>
+                                    <p class="category-info">스토리 요약부터 해설까지, 도슨트와 함께하는 asdasdasdasdasd</p>
+                                </div>
+                                <div class="img_book">
+                                    <div class="img_book__type1"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="category-type">
+                                    <p class="book-title">도슨트북</p>
+                                    <p class="category-info">스토리 요약부터 해설까지, 도슨트와 함께하는 asdasdasdasdasd</p>
+                                </div>
+                                <div class="img_book">
+                                    <div class="img_book__type1"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="category-type">
+                                    <p class="book-title">도슨트북</p>
+                                    <p class="category-info">스토리 요약부터 해설까지, 도슨트와 함께하는 asdasdasdasdasd</p>
+                                </div>
+                                <div class="img_book">
+                                    <div class="img_book__type1"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="category-type">
+                                    <p class="book-title">도슨트북</p>
+                                    <p class="category-info">스토리 요약부터 해설까지, 도슨트와 함께하는 asdasdasdasdasd</p>
+                                </div>
+                                <div class="img_book">
+                                    <div class="img_book__type1"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="title-link__type2">
+                    <h2>오디오</h2>
+                </div>
+                <div class="card-list-type15">
+                    <ul>
+                        <li class="#none">
+                            <a href="#none" class="bg-type1">
+                                <div class="category-type">
+                                    <p class="book-title">오디오 드라마</p>
+                                    <p class="category-info">금혼령, 조선 혼인 금지령</p>
+                                </div>
+                                <div class="img_book2">
+                                    <div class="img_book__type1"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="#none">
+                            <a href="#none" class="bg-type1">
+                                <div class="category-type">
+                                    <p class="book-title">오디오 드라마</p>
+                                    <p class="category-info">금혼령, 조선 혼인 금지령</p>
+                                </div>
+                                <div class="img_book2">
+                                    <div class="img_book__type1"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="category-type">
+                                    <p class="book-title">도슨트북</p>
+                                    <p class="category-info">스토리 요약부터 해설까지, 도슨트와 함께하는 asdasdasdasdasd</p>
+                                </div>
+                                <div class="img_book">
+                                    <div class="img_book__type1"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="title-link mt27">
+                    <a href="#none">
+                        <h2>오디오북 리더</h2>
+                        <p class="mt9"></p>
+                    </a>
+                </div>
+                <div class="card-list-type16 mt15">
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <span class="img_profile1"></span>
+                                <p class="name">전효성</p>
+                                <p class="job">가수</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <span class="img_profile2"></span>
+                                <p class="name">배성재</p>
+                                <p class="job">아나운서</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <span class="img_profile2"></span>
+                                <p class="name">배성재</p>
+                                <p class="job">아나운서</p>
+                            </a>
+                        </li>
+                        <li class="hide">
+                            <a href="#none">
+                                <span class="img_profile2"></span>
+                                <p class="name">배성재</p>
+                                <p class="job">아나운서</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="title-link__type3">
+                    <h2>키워드로 보는 책</h2>
+                </div>
+                <div class="card-list-type17 mt15">
+                    <ul>
+                        <li class="new-bg1">
+                            <a href="#none" class="new-keyword">
+                                <p>#팩션</p>
+                                <span class="new"><span class="hide">새글</span></span>
+                            </a>
+                        </li>
+                        <li class="new-bg2">
+                            <a href="#none" class="new-keyword">
+                                <p>#세계음식</p>
+                                <span class="new"><span class="hide">새글</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <p>#자격증</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <p>#서울국제도서전</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="search-bottom">
+                <div class="title-link__type3">
+                    <h2>컬렉션</h2>
+                    <p class="mt9">밀리가 만드는 다양한 아티클을 확인해보세요!</p>
+                </div>
+                <div class="card-list-type18 mt15">
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <span class="collection-thumb1"></span>
+                                <p>책-잇</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <span class="collection-thumb2"></span>
+                                <p>밀리봐봐</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <span class="collection-thumb3"></span>
+                                <p>에디더의 선택</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <span class="collection-thumb4"></span>
+                                <p>밀리 시리즈</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

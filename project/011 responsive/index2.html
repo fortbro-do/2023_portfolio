@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index2</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/default.css">
+    
+</head>
+
+<body>
+    <style>
+        html {
+    font-size: 31.25% ;
+}
+    </style>
+    
+    <h2>리스트 1 </h2>
+    <nav>
+        <ul class="list1">
+            <li>
+                <h2 class="list1__h2">소년소녀부</h2>
+                <p class="list1__txt mt16">
+                    근행창제를 성실히 실천하여 <br>
+                    사자왕의 마음을 갖는 소년소녀부
+                </p>
+                <a class="list1__btn_more"></a>
+            </li>
+            <li>
+                <h2 class="list1__h2">미래부</h2>
+                <p class="list1__txt mt16">
+                    근행창제를 실천하며 선생님의 <br>
+                    마음을 배우는 미래부!
+                </p>
+                <a class="list1__btn_more"></a>
+            </li>
+            <li>
+                <h2 class="list1__h2">미래본부</h2>
+                <p class="list1__txt mt16">
+                    학회라는 궁극적인 인간주의 <br>
+                    뜰에서 크고 풍요롭게 육성합니다
+                </p>
+                <a class="list1__btn_more"></a>
+            </li>
+            <li>
+                <h2 class="list1__h2">교육부</h2>
+                <p class="list1__txt mt16">
+                    소년소녀부와 미래부에 신심을 <br>
+                    계승하고 인재로 육성합니다
+                </p>
+                <a class="list1__btn_more"></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="review">
+        <p>느낀점 : </p>flex와 grid를 잘 섞어 사용해야 제작에 용이하다. <br> 반응형을 적용했을 때 변하는 요소를 먼저 분석하자.
+    </div>
+    <h2>리스트2</h2>
+    <div>
+        <nav>
+            <ul class="list-2">
+                <li>
+                    <a href="" class="list-2__home">홈</a>
+                </li>
+                <li>
+                    <a href="" class="list-2__type">소년소녀부</a>
+                </li>
+                <li>
+                    <a href="" class="list-2__type-info">소년소녀부 소개</a>
+                </li>
+                <li>
+                    <a href="" class="list-2__character-info">캐릭터 소개</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="list2__selectbox">
+            <div>
+                <select class="list-2__type">
+                    <option value="">소년소녀부</option>
+                </select>
+                <span></span>
+                <select class="list-2__character-info">
+                    <option value="">캐릭터 소개</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <p>느낀점 : </p> 웹페이지 네비게이션 바에서 셀렉박스로 변해야하는데 현재로서는 적용할 수 없어 리스트를 2개 제작 후 display:none / block로 처리했다.
+    </div>
+    <h2>리스트3</h2>
+    <div class="list-3">
+        <h2 class="list3__h2">미래본부 사명</h2>
+        <ul class="list3">
+            <li>
+                <p class="list3__title">신심계승 도모</p>
+                <p class="list3__title-info">각 가정에서의 심신계승 도모</p>
+            </li>
+            <li>
+                <p class="list3__title">연대 강화</p>
+                <p class="list3__title-info">미래부원과의 일대일 연대를 강화</p>
+            </li>
+            <li>
+                <p class="list3__title">지원체계 확립</p>
+                <p class="list3__title-info">소년소녀부 전담 및 미래부 지원체계 확립</p>
+            </li>
+        </ul>
+    </div>
+    <div class="review">
+        <p>느낀점 : </p> 단순한 리스트 형태는 변화되는 모습을 생각하여 쉽게 제작할 수 있었다. 
+    </div>
+   
+<h2>컨텐츠6</h2>
+    <div class="content6">
+        <div class="content6__writing">
+            <h2 class="content6__h2 mt80">
+                Rebehayan
+            </h2>
+            <p class="content6__detail mt20">
+                Rebehayan, which started its business in Korea in 2012, provides relevant camping equipment in all
+                aspects. We believe our products with the right function, design and price are only a means, and not the
+                purpose of enjoying outdoors. <br><br>
+
+                Minimalworks provides products and services that help you focus fully on nature and people outdoors by
+                removing what is unnecessary. <br><br>
+
+
+                We will continue to improve and develop relevant functions and designs as our lifestyles change and
+                become your partners, sharing the surprises and deep emotions we felt outdoors.
+            </p>
+        </div>
+        <div class="content6__img">
+            <img src="images/img_content6.png" alt="">
+        </div>
+        <div class="content6__logo">
+            <img src="images/img_logo-content6.png" alt="REBEHAYAN">
+        </div>
+    </div>
+    <div class="review">
+        <p>느낀점 : </p> 이미지에 높이를 주면 안된다. 넓이는 100%로 해서 화면크기에 맞게 줄어들고 커지게 만든다.
+    </div>
+
+    <h2>폼1</h2>
+    <div class="form1">
+        <table>
+            <caption class="hide">글쓰기</caption>
+            <colgroup>
+                <col style="width: 20rem;">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th><label for="txt1-1">글제목</label></th>
+                    <td><input type="text" id="txt1-1" placeholder="제목을  입력하세요"></td>
+                </tr>
+                <tr>
+                    <th><label for="txt1-2"></label>상세내용</th>
+                    <td>
+                        <div></div>
+                        <textarea id="txt1-2" placeholder="내용을 입력하세요"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>파일첨부</th>
+                    <td class="form1__flie">
+                        <input type="text" readonly placeholder="정보를 입력하세요" title="파일정보"><input type="file" class="hide"
+                            id="file1-1"><label for="file1-1">파일<span>찾기</span><span>첨부</span></label>
+                        <button></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="review">
+        <p>느낀점 : </p> 코딩하다 보니 input과 button사이에 공백이 발생했다. <br> 해결방법 <br>
+        1. 줄 바꿈 하지말고 한 줄로 코딩한다. <br>2. display: flex를 준다. <br> 3. font-size: 0 을 준다. 
+    </div>
+  
+    <h2>리스트4</h2>
+    <nav>
+        <ul class="list4">
+            <li class="list4__prev-post"><a href="">
+                    <p>이전글</p>
+                    <p>10월 해돋이 행사 식순자료 업데이트 되었습니다.</p>
+                </a></li>
+            <li class="list4__next-post"><a href="">
+                    <p>다음글</p>
+                    <p>자료가 없습니다</p>
+                </a></li>
+        </ul>
+    </nav>
+    <div class="review">
+        <p>느낀점 : </p> 이전글, 다음글의 a는 글자가 있는 영역만 클리이 되어야한다. <br> 눈에 보이는 영역 전체가 클릭이 되면 사용자가 클릭할 때 실수 할 수 있기 때문이다.  
+    </div>
+    
+  
+    <h2>컨텐츠8</h2>
+    <header class="header hide ">
+        <div class="header__wrap">
+            <h1 class="logo"><a href=""><span class="hide">logo</span></a></h1>
+            <nav>
+                <ul class="gnb active">
+                    <li class="active">
+                        <a href="">블랙리본</a>
+                        <ul>
+                            <li><a href="">주요서비스</a></li>
+                            <li><a href="">주요기능</a></li>
+                            <li><a href="">B.I.</a></li>
+                            <li><a href="">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="">상품안내</a>
+                        <ul>
+                            <li><a href="">기본 상품</a></li>
+                            <li><a href="">프리미엄 상품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">도입문의</a>
+                        <ul>
+                            <li><a href="">도입문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">고객센터</a>
+                        <ul>
+                            <li><a href="">자주하는 질문</a></li>
+                            <li><a href="">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn-mega active"></button>
+        </div>
+    </header>
+    <div class="review">
+        <p>느낀점 : </p>(현재hide상태) <br> header에 nav메뉴는 postion으로 제작한다. <br> 모바일 사이즈는 메뉴버튼을 클릭하는 순간 화면전체를 덮도록 만들었고, 스크립트 적용 할 때 fixed로 적용해서 작업해야한다. (클릭하는 순간 화면을 덮어야하기 때문)
+    </div>
+
+    
+    
+    <h2>폼4</h2> 
+    <div class="form4">
+        <h2>도입문의</h2>
+        <ul >
+            <li>
+                <label for="form4__txt1-1" class="important">회사명</label>
+                <input type="text" id="form4__txt1-1" placeholder="회사명을 입력하세요.">
+            </li>
+            <li>
+                <label for="form4__num1-1">임직원 수</label>
+                <input type="number" id="form4__num1-1" placeholder="임직원수를 선택하세요.">
+            </li>
+            <li>
+                <label for="form4__txt1-2" class="important">담당자명</label>
+                <input type="text" id="form4__txt1-2" placeholder="담당자명을 입력하세요.">
+            </li>
+            <li>
+                <label for="form4__tel1-1" class="important">전화번호</label>
+                <input type="tel" id="form4__tel1-1" placeholder="전화번호를 입력하세요.">
+            </li>
+            <li> 
+                <label for="form4__txt1-3" class="important"> 이메일 주소</label> 
+                <input type="text" id="form4__txt1-3" placeholder="이메일주소를 입력하세요.">
+            </li>
+            <li class="form4__textarea"> 
+                <label for="form4__txt1-4" class="important">내용</label>
+               <textarea id="form4__txt1-4" placeholder="이곳에 상세내용을 남겨주세요."></textarea>
+            </li>
+        </ul>
+        <div class="form4__chk-box">
+            <input type="checkbox" id="form4__chk2-1" class="none">
+            <label for="form4__chk2-1" class="chk-box">개인정보 수집 및 이용에 동의합니다(필수)</label>
+        </div> 
+        <div class="form4__btnbox">
+            <button class="form4__btn-write">도입문의 요청</button>
+        </div>
+    </div> 
+    <div class="review">
+        <p>느낀점 : </p> 간단한 선은 background로 그릴 수 있다. <br>
+        화면 전환될 때 변경되는 아이콘을 잘 확인하자. <br>
+        input과 button은 기본적으로 가운데 정렬이다. padding은 좌,우만 주고 높이를 주면 된다.
+    </div>
+    <h2>폼5</h2>
+    <div class="form5">
+        <ul>
+            <li>
+                <select title="결재함">
+                    <option>결재함</option>
+                </select> 
+            </li>
+            <li>
+                <input type="number" placeholder="문서번호 입력" title="문서번호">
+            </li> 
+            <li>
+                <input type="text" placeholder="작성자 입력" title="작성자">
+            </li>
+            <li class="form5__datebox">
+                <input type="date"  data-placeholder="기간(시작)" required title="시작일짜">
+                <span></span>
+                <input type="date"  data-placeholder="기간(종료)" required title="종료일자">
+            </li> 
+            <li class="form5__searchbox">
+                <input type="text" placeholder="문서제목 입력" title="문서제목검색">
+            </li>
+        </ul>
+        <div class="form5__btnbox">
+            <button>검색</button> 
+        </div>
+    </div>
+    <div class="review">
+        <p>느낀점 : </p> albel을 사용하지 못하면 title을 사용해서 작업한다. 
+        <br>input[type=date]는 data-placeholder를 사용하고 아이콘 디자인은 background로 삽입한다. <br>
+        CSS에서도input[type="date"]::before {content:attr(data-placeholder);} 를 사용해서 placeholder를 꾸며준다.
+    </div>
+</body>
+
+</html>

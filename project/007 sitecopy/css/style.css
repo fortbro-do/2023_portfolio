@@ -1,0 +1,2624 @@
+:root {
+    --black: #000;
+    --gray: #ddd;
+    --l-gray: #e3e2e1;
+    --d-gray: #a4a19d;
+    --white: #fff;
+    --gray2: #666666;
+    --bg_gray: #f8f8f8;
+    --l-black: #333333;
+    --bg-footer: #f4f4f4;
+    --footer-gray: #777777;
+    --font-gray: #767676;
+    --pink: #fa354d;
+    --purple: #852174;
+    --red: #da0f47;
+}
+
+body {
+    position: relative;
+}
+
+body main .quickmenu {
+    position: fixed;
+    right: 48px;
+    bottom: 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 10;
+}
+
+body main .quickmenu .consulting {
+    background: url(../images/ico-img-floating.svg) no-repeat center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--pink);
+    border-radius: 100%;
+}
+
+body main .quickmenu .move-top {
+    background: url(../images/ico-top-new.svg) no-repeat center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--white);
+    border-radius: 100%;
+    box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.15);
+}
+/* 스크롤 */
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #EBEBEB;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #DDDADA;
+    border-radius: 0;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* 헤더영역 */
+.header {
+    max-width: 1460px;
+    margin: 19px auto 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 39px
+}
+
+
+.logo>a {
+    display: flex;
+    width: 255px;
+    height: 27px;
+    background: url(../images/img_lg-logo.png) no-repeat;
+}
+
+.header nav{
+    position: relative;
+}
+.gnb {
+    display: flex;
+    gap: 24px;
+    margin: 29px 0 0;
+    height: 43px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+}
+.header .gnb >li ~li > div{
+    display: none;
+
+}
+.header .gnb >li> .drop-menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 43px;
+    z-index: 10;
+    height: 161px;
+    padding: 20px;
+}
+.header .gnb >li> .drop-menu >ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 3px;
+    height: 139px;
+}
+.header .gnb >li> .drop-menu >ul li{
+    width: 45%;
+    font-size: 16px;
+}
+.header .gnb>li> a:hover::after {
+    transform: scaleY(1);
+}
+
+.header .gnb> li >a {
+    position: relative;
+    transition: .5s;
+    font-size: 16px;
+}
+
+.header .gnb >li> a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    height: 2px;
+    transition: .5s;
+    transform: scaleY(0);
+    background: var(--black);
+}
+.menu-bg{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 99px;
+    width: 100%;
+    height: 200px;
+    background: var(--white);
+    z-index: 9;
+    border-top: 1px solid var(--gray);
+}
+.dimed{
+    display: none;
+    position: absolute;
+    top: 110px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 8;
+}
+
+nav .sub-page {
+    margin: 20px 0 0;
+}
+
+
+
+.search {
+    width: 18px;
+    height: 18px;
+    margin: 0 22px 0 0;
+    background: url(../images/ico_search.png) no-repeat;
+}
+
+.myinfo::after {
+    display: flex;
+    content: "";
+    height: 14px;
+    margin: 0 0 0 45px;
+    border-right: 1px solid var(--gray);
+
+}
+
+.myinfo {
+    width: 18px;
+    height: 19px;
+    margin: 0 52px 0 0;
+    background: url(../images/ico_person.png) no-repeat;
+}
+
+.link-middle {
+    margin: 0 26px;
+}
+
+.link-arrow::after {
+    display: inline-flex;
+    content: "";
+    width: 11px;
+    height: 11px;
+    margin: 0 0 0 5px;
+    background: url(../images/ico_arrow_r_up.png);
+    font-size: 11px;
+    color: var(--black);
+}
+
+.banner-top div .bannertxt1_1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.banner-top div .bannertxt1_2 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--black);
+}
+
+.banner-top div .bannertxt1_3 {
+    font-size: 17px;
+    color: var(--black);
+    margin: 35px 0 0;
+}
+
+.banner-top {
+    position: relative;
+}
+
+.banner-top .banner>img {
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.banner-top .banner>div {
+    position: absolute;
+    left: 194px;
+    top: 101px;
+}
+
+.play-control {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 260px;
+    bottom: 40px;
+}
+
+.play-control div .back-arrow {
+    width: 24px;
+    height: 24px;
+    background: url(../images/ico_arrow_left_s.svg) no-repeat;
+}
+
+.play-control div .next-arrow {
+    width: 24px;
+    height: 24px;
+    background: url(../images/ico_arrow_right_s.svg) no-repeat;
+}
+
+.play-control div span {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.play-control div .total-number {
+    color: var(--l-gray);
+}
+
+.play-control div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 148px;
+    height: 30px;
+    background-color: var(--d-gray);
+    border: 1px solid var(--d-gray);
+    border-radius: 18px;
+    margin: 0 8px 0 0;
+}
+
+.play-control .play-button {
+    width: 24px;
+    height: 24px;
+    background: url(../images/ico_pause.svg) no-repeat;
+}
+
+/* 바로가기 메뉴 */
+.info-event {
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+.shortcuts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin: 56px 0 0;
+}
+
+.shortcuts a::before {
+    content: "";
+    display: flex;
+    width: 88px;
+    height: 88px;
+}
+
+.shortcuts .ico_location::before {
+    background: url(../images/ico_location.png)no-repeat;
+}
+
+.shortcuts .ico_open::before {
+    background: url(../images/ico_open.png)no-repeat;
+}
+
+.shortcuts .ico_calender::before {
+    background: url(../images/ico_calender.png)no-repeat;
+}
+
+.shortcuts .ico_live::before {
+    background: url(../images/ico_live.png)no-repeat;
+}
+
+.shortcuts .ico_event::before {
+    background: url(../images/ico_event.png)no-repeat;
+}
+
+.shortcuts .ico_counseling::before {
+    background: url(../images/ico_counseling.png)no-repeat;
+}
+
+.shortcuts .ico_video-counseling::before {
+    background: url(../images/ico_video-counseling.png)no-repeat;
+}
+
+.shortcuts .ico_wedding::before {
+    background: url(../images/ico_wedding.png)no-repeat;
+}
+
+.shortcuts .ico_event2::before {
+    background: url(../images/ico_event2.png)no-repeat;
+}
+
+.shortcuts .ico_display::before {
+    background: url(../images/ico_display.png)no-repeat;
+}
+
+.shortcuts li {
+    display: flex;
+    align-items: center;
+}
+
+.shortcuts li>a {
+    width: 88px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black);
+
+}
+
+.shortcuts li a>p {
+    margin: 17px 0 0;
+}
+
+.event-list {
+    text-align: center;
+}
+
+.event-list ul {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1460px;
+    padding: 0 40px;
+    margin: 59px 0 32px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.event-list li {
+    position: relative;
+}
+
+.event-list li a .bannertxt2_1 {
+    position: absolute;
+    left: 98px;
+    top: 57px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.event-list li a img {
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-list button {
+    width: 142px;
+    height: 40px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    font-size: 13px;
+    color: var(--black);
+    margin: 0 0 112px;
+    box-sizing: border-box;
+}
+
+/* 오픈 매장 소개 */
+.store-introduction {
+    text-align: center;
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+.store-introduction h2 {
+    margin: 0 0 53px;
+    font-size: 35px;
+}
+
+.store-introduction ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 0 32px;
+}
+
+.store-introduction ul a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray2);
+}
+
+.store-introduction ul a:hover {
+    color: var(--black);
+
+}
+
+.store-introduction ul a:hover::after {
+    transform: scaleY(1);
+}
+
+.store-introduction ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 100%;
+    height: 4px;
+    transition: .5s;
+    transform: scaleY(0);
+    background: var(--black);
+}
+
+.store-introduction .banner-swiper img {
+width: 100%;
+object-fit: contain;
+}
+
+
+
+/* 베스트샵 스토리 */
+
+.bestshop-story {
+    position: relative;
+    max-width: 1460px;
+    margin: 112px auto 0;
+}
+
+.bestshop-story .story-title {
+    text-align: center;
+    margin: 0 0 38px;
+    line-height: 54px;
+    color: var(--black);
+}
+
+.bestshop-story .story-title p {
+    font-size: 17px;
+}
+
+.bestshop-story .story-title h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.bestshop-story .story-list {
+    position: relative;
+    margin-right: -71px;
+}
+
+.bestshop-story .story-list-bg::before {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    content: "";
+    background: var(--bg_gray);
+    width: 625px;
+    height: 478px;
+    border-radius: 0 8px 8px 0;
+    z-index: -1;
+}
+
+
+
+.bestshop-story .story-img {
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--black);
+}
+
+.bestshop-story .story-list .story-select-img {
+    opacity: 1;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.bestshop-story .story-img .select-img {
+    width: 320px;
+    height: 320px;
+}
+
+.bestshop-story .story-img img {
+    width: 270px;
+    height: 270px;
+    border-radius: 8px;
+    margin: 0 50px 0 0;
+}
+
+
+
+/* 베스트샵 전국 매장 혜택 */
+
+.store-benefit {
+   max-width: 1396px;
+    margin: 0 auto;
+}
+
+.store-benefit .benefit-title {
+    text-align: center;
+    line-height: 54px;
+    color: var(--black);
+    margin: 146px 0 50px;
+}
+
+.store-benefit .benefit-title p {
+    font-size: 17px;
+}
+
+.store-benefit .benefit-title h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.store-benefit .benefit-box {
+    margin: 0 0 123px;
+}
+
+.store-benefit .benefit-box ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.store-benefit .benefit-box li {
+    position: relative;
+}
+
+.store-benefit .benefit-box li .small-box::before {
+    width: 325px;
+    height: 300px;
+    border-radius: 9px;
+}
+
+.store-benefit .benefit-box li a::before {
+    display: flex;
+    content: "";
+    width: 674px;
+    height: 300px;
+    border-radius: 9px;
+}
+
+.store-benefit .benefit-box li .big-benefit-box_1::before {
+    background: url(../images/img_benefit_1.jpg) no-repeat;
+}
+
+.store-benefit .benefit-box li .big-benefit-box_2::before {
+    background: url(../images/img_benefit_2.jpg) no-repeat;
+}
+
+.store-benefit .benefit-box li .small-benefit-box_1::before {
+    background: url(../images/img_benefit_3.jpg) no-repeat;
+}
+
+.store-benefit .benefit-box li .small-benefit-box_2::before {
+    background: url(../images/img_benefit_4.jpg) no-repeat;
+}
+
+.store-benefit .benefit-box li .big-benefit-box_3::before {
+    background: url(../images/img_benefit_5.jpg) no-repeat;
+}
+
+.store-benefit .benefit-box p {
+    position: absolute;
+    left: 26px;
+    bottom: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+/* SNS 채널 */
+
+.sns-channel {
+    max-width: 1380px;
+    margin: 0 auto;
+    border-bottom: 3px solid var(--black);
+    box-sizing: border-box;
+}
+
+.sns-channel>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 83px 0;
+}
+
+.sns-channel h2 {
+    font-size: 33px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.sns-channel p {
+    font-size: 15px;
+    color: var(--gray2);
+}
+
+.sns-channel .sns-button a {
+    display: inline-flex;
+    margin: 0 20px 0 0;
+    width: 60px;
+    height: 60px;
+}
+
+.sns-channel .sns-button .naver-blog {
+    background: url(../images/ico_naver-blog.png) no-repeat;
+}
+
+.sns-channel .sns-button .facebook {
+    background: url(../images/ico_facebook.png) no-repeat;
+}
+
+.sns-channel .sns-button .instagram {
+    background: url(../images/ico_instagram.png) no-repeat;
+}
+
+.sns-channel .sns-button .youtube {
+    background: url(../images/ico_youtube.png) no-repeat;
+}
+
+.sns-channel .sns-button .naver-post {
+    background: url(../images/ico_naver-post.png) no-repeat;
+}
+
+.sns-channel .sns-button .naver-tv {
+    background: url(../images/ico_naver-tv.png) no-repeat;
+}
+
+.notice {
+    width: 1380px;
+    margin: 29px auto 159px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notice .move-notice {
+    display: flex;
+    align-items: center;
+}
+
+.notice .move-notice h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--l-black);
+}
+
+.notice .move-notice h2::after {
+    display: inline-block;
+    content: "";
+    height: 11px;
+    margin: 0 16px 0 13px;
+    border-right: 1px solid var(--d-gray);
+}
+
+.notice .move-notice a {
+    font-size: 15px;
+    color: var(--l-black);
+    vertical-align: 0.5px;
+}
+
+.notice .control-button {
+    display: inline-flex;
+    align-items: center;
+}
+
+.notice .control-button .up-arrow {
+    width: 20px;
+    height: 20px;
+    background: url(../images/ico_arrow_up.svg) no-repeat;
+    margin: 0 10px 0 0;
+}
+
+.notice .control-button .down-arrow {
+    width: 20px;
+    height: 20px;
+    background: url(../images/ico_arrow_down.svg) no-repeat;
+    margin: 0 10px 0 0;
+}
+
+.notice .control-button .btn-pause {
+    width: 20px;
+    height: 20px;
+    background: url(../images/ico_pause-small.svg) no-repeat;
+    margin: 0 10px 0 0;
+}
+
+/* 푸터 영역 */
+
+footer {
+    background-color: var(--bg-footer);
+    /* height: 407px; */
+    padding: 0 0 40px;
+}
+
+footer >div{
+    max-width: 1284px;
+    margin: 0 auto;
+}
+
+footer .view-allmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    /* height: 144px; */
+    padding: 50px 0 48px;
+    border-bottom: 1px solid var(--gray);
+}
+.view-allmenu-open{
+    display: none;
+}
+.view-allmenu-open> ul{
+    display: flex;
+    gap: 35px;
+}
+.view-allmenu-open> ul >li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.view-allmenu-open> ul >li p{
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 700;
+}
+.view-allmenu-open> ul >li >ul >li{
+    color: var(--black);
+    font-size: 11px;
+    font-weight: 700;
+}
+.view-allmenu-open> ul >li >ul >li span{
+    color: var(--gray2);
+    font-size: 11px;
+    font-weight: 700;
+}
+.view-allmenu-open .menu-bottom {
+    margin-top: 22px;
+}
+
+footer .view-allmenu .btn-allmenu-open .close{
+    display: none;
+}
+footer .view-allmenu .btn-allmenu-open{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 30px;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black);
+}
+footer .view-allmenu .btn-allmenu-open.active .close {
+    display: block;
+    transition: .4s;
+}
+footer .view-allmenu .btn-allmenu-open.active .open {
+    display: none;
+    transition: .4s;
+}
+
+footer .view-allmenu .btn-allmenu-open.active::after {
+    transform: rotate(180deg);
+}
+footer .view-allmenu .btn-allmenu-open::after {
+    display: inline-flex;
+    margin: 0 0 0 10px;
+    content: "";
+    width: 12px;
+    height: 6px;
+    background: url(../images/ico_arrow_down-black.svg) no-repeat;
+    transition: .1s;
+}
+
+
+footer .sns-button {
+    height: 65px;
+}
+
+footer .sns-button ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray);
+}
+
+footer .sns-button ul li {
+    margin: 21px 0 24px;
+}
+
+footer .sns-button ul a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 24px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray2);
+}
+
+footer .sns-button ul a::before {
+    display: flex;
+    align-items: center;
+    content: "";
+    width: 32px;
+    height: 32px;
+}
+
+footer .sns-button ul .naver-blog::before {
+    background: url(../images/ico_blog-gray.svg) no-repeat;
+}
+
+footer .sns-button ul .facebook::before {
+    background: url(../images/ico_facebook-gray.svg) no-repeat;
+}
+
+footer .sns-button ul .instagram::before {
+
+    background: url(../images/ico_instagram-gray.svg) no-repeat;
+}
+
+footer .sns-button ul .youtube::before {
+    background: url(../images/ico_youtube-gray.svg) no-repeat;
+}
+
+footer .sns-button ul .naver-tv::before {
+    background: url(../images/ico_naver-tv-gray.svg) no-repeat;
+}
+
+footer .sns-button ul .naver-post::before {
+    background: url(../images/ico_naver-post-gray.svg) no-repeat;
+}
+
+footer .sns-button ul li button {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+footer .sns-button ul li button.active::after {
+    transform: rotate(180deg);
+}
+footer .sns-button ul li button::after {
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 6px;
+    margin: 0 0 0 6px;
+    background: url(../images/ico_arrow_down-black.svg) no-repeat;
+    transition: .3s;
+}
+.btn-family-site{
+    position: relative;
+}
+
+footer .sns-button .family-site{
+    display: none;
+    width: 163px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 0.5px 0.5px 8px var(--d-gray);
+}
+footer .sns-button .family-site li{
+    display: block;
+    margin: 0;
+}
+footer .sns-button .family-site li:hover{
+    background: var(--gray);
+}
+footer .sns-button .family-site a{
+    padding:  0 20px;
+    margin: 0;
+    color: var(--l-black);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 40px;
+}
+footer .sns-button .family-site a::before{
+    display: none;
+}
+footer .site-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .site-info div>p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray2);
+    line-height: 20px;
+}
+
+footer .site-info ul {
+    margin: 19px 0 0;
+}
+
+footer .site-info ul li {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray2);
+}
+
+footer .site-info ul .visit-reservation {
+    display: flex;
+    align-items: center;
+}
+
+footer .site-info ul .visit-reservation a {
+    margin: 0 0 0 3px;
+}
+
+footer .site-info ul li b {
+    color: var(--black);
+}
+
+footer .site-info li .deco-none:hover {
+    text-decoration: none;
+}
+
+footer .site-info li a:hover {
+    text-decoration: underline;
+}
+
+footer .site-info .other-link {
+    gap: 13px;
+    color: var(--black);
+}
+
+footer .site-info .company-info {
+    gap: 16px;
+}
+
+footer .site-info .company-info .info-confirmation {
+    display: flex;
+    align-items: center;
+    height: 16px;
+    font-size: 10px;
+    background-color: var(--footer-gray);
+    border-radius: 9px;
+    padding: 3px 10px;
+    color: var(--white);
+    box-sizing: border-box;
+}
+
+footer .site-info .service-mark {
+    display: inline-flex;
+    align-items: center;
+    margin: 116px 0 0;
+    font-size: 11px;
+    color: var(--gray2);
+    width: 40%;
+}
+
+footer .site-info .service-mark span::before {
+    display: inline-flex;
+    content: "";
+    margin: 0 14px 0 0;
+    width: 36px;
+    height: 33px;
+    background: url(../images/ico_isms-logo.png) no-repeat;
+}
+
+footer .site-info .service-mark b {
+    color: var(--black);
+    margin: 0 7px 0 0;
+}
+
+/* 매장찾기 */
+.root_daum_roughmap_landing{
+    max-width: 1405px;
+    min-width: 905px;
+}
+
+.site-map {
+    height: 38px;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.site-map ul {
+    display: inline-flex;
+    align-items: center;
+}
+
+.site-map ul li {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.site-map ul .arrow-left::after {
+    display: inline-flex;
+    vertical-align: -2px;
+    content: "";
+    width: 6px;
+    height: 12px;
+    margin: 0 10px 0 9px;
+    background: url(../images/ico_arrow_right-black.svg) no-repeat;
+}
+
+.store-search {
+    display: flex;
+    min-width: 1380px;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.store-search .search-box {
+    margin: 0 5px 0 32px;
+}
+
+.nav-menu ul {
+    display: flex;
+    padding: 0 0 12px 0;
+    border-bottom: 1px solid var(--gray);
+    margin: 0 32px 0 0;
+}
+
+.store-search .select-search {
+    margin: 0 32px 0 0;
+}
+
+.store-search h2 {
+    color: var(--black);
+    font-size: 30px;
+    margin: 26px 0 45px;
+}
+
+.store-search .select-list button {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--gray2);
+    background: none;
+    margin: 0 34px 0 0;
+}
+
+.store-search .select-list .select-btn::after {
+    position: absolute;
+    bottom: -13px;
+    display: flex;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--black);
+}
+
+.store-search .select-list .select-btn {
+    position: relative;
+    color: var(--black);
+}
+
+.store-search .select-search .searchbar {
+    display: inline-flex;
+    margin: 14px 0 33px;
+}
+
+.store-search .select-search .searchbar input::placeholder {
+    color: var(--gray2);
+}
+
+.store-search .select-search .searchbar input {
+    width: 362px;
+    height: 48px;
+    border-radius: 9px;
+    border: 1px solid var(--gray);
+    box-sizing: border-box;
+    margin: 0 9px 0 0;
+    padding: 0 0 0 18px;
+}
+
+.store-search .select-search .searchbar button {
+    width: 65px;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 9px;
+    color: var(--d-gray);
+    border: 1px solid var(--gray);
+    background-color: var(--bg-footer);
+    box-sizing: border-box;
+}
+
+.select-list .list-top p {
+    color: var(--black);
+    font-size: 15px;
+}
+
+.search-list {
+    width: 100%;
+    height: 500px;
+    margin: 0 5px 0 0;
+    overflow: hidden scroll;
+    
+}
+.search-list::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+  }
+  .search-list::-webkit-scrollbar-thumb {
+      /* width: 4px; */
+      background-color:var(--gray);
+      border-radius: 10px;
+      
+  }
+  .search-list::-webkit-scrollbar-track {
+      background-color: transparent;
+  }
+
+.list-top .filter {
+    width: 26px;
+    height: 26px;
+    background: url(../images/ico_line.png) no-repeat;
+}
+
+.list-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray2);
+    padding: 0 0 14px;
+    box-sizing: border-box;
+    margin: 0 32px 0 0;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.location {
+    position: relative;
+    padding: 31px 0 26px 0;
+    border-bottom: 1px solid var(--gray);
+    box-sizing: border-box;
+    margin: 0 32px 0 0;
+}
+
+.location div>a::before {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: 6px;
+    margin: 0 10px 0 0;
+    content: "";
+    width: 14px;
+    height: 19px;
+    background: url(../images/ico_location.svg) no-repeat;
+}
+
+.location div>a {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--black);
+    margin: 0 0 0 5px;
+}
+
+.location div>span {
+    font-size: 11px;
+    color: var(--black);
+}
+
+.location .address {
+    margin: 16px 0 0;
+    font-size: 14px;
+}
+
+.location .tel-num::before {
+    display: inline-flex;
+    margin: 0 5px 0 0;
+    content: "";
+    width: 14px;
+    height: 15px;
+    background: url(../images/ico_phone.png);
+}
+
+.location .tel-num {
+    font-size: 13px;
+    color: var(--gray2);
+}
+
+.location button {
+    width: 77px;
+    height: 26px;
+    border: 1px solid var(--black);
+    color: var(--black);
+    border-radius: 13px;
+    background-color: var(--white);
+    box-sizing: border-box;
+}
+
+.location .reservation {
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    margin: 0 0 0 8px;
+    background-color: var(--white);
+}
+
+.location .list-button {
+    margin: 11px 0 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.location .list-button>div {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+
+}
+
+.location .detail {
+    margin: 0 0 0 26px;
+}
+
+.location .line::after {
+    display: inline-block;
+    vertical-align: -1px;
+    content: "";
+    margin: 0 6px 0 7px;
+    height: 10px;
+    border-right: 1px solid var(--gray);
+}
+
+.map {
+    position: relative;
+}
+
+.root_daum_roughmap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.find-store {
+    position: absolute;
+    right: 630px;
+    bottom: 29px;
+    z-index: 10;
+    width: 160px;
+    height: 40px;
+    border: 1px solid var(--pink);
+    border-radius: 20px;
+    background-color: var(--white);
+    color: var(--pink);
+    font-size: 13px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.mylocation::after {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: 6px;
+    margin: 0 0 0 8px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(../images/ico_my_location.svg) no-repeat;
+}
+
+.mylocation {
+    position: absolute;
+    right: 20px;
+    bottom: 29px;
+    z-index: 10;
+    width: 123px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--purple);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* 오픈 매장 안내 */
+
+.store-point {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.store-point h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 35px 0 70px;
+}
+
+.store-point img {
+    width: 1380px;
+    height: 450px;
+    margin: 0 0 34px;
+}
+
+.store-point table {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 146px;
+}
+
+.store-point table thead tr {
+    height: 57px;
+    background-color: var(--bg-footer);
+    color: var(--gray2);
+    font-size: 16px;
+}
+
+.store-point table tr {
+    height: 80px;
+    border-bottom: 1px solid var(--gray);
+    box-sizing: border-box;
+}
+
+.store-point table thead th:nth-child(5) {
+    border-right: none;
+
+}
+
+.store-point table thead th {
+    border-top: 1px solid var(--gray2);
+    border-right: 1px solid var(--gray);
+    box-sizing: border-box;
+}
+
+.store-point table tbody td:nth-child(5) {
+    border-right: none;
+
+}
+
+.store-point table tbody td {
+    border-right: 1px solid var(--gray);
+    box-sizing: border-box;
+}
+
+.store-point table tbody .shop-benefit {
+    width: 32px;
+    height: 32px;
+    background: url(../images/ico_shop_benefit.svg) no-repeat;
+}
+
+.store-point table tbody .shop-map {
+    width: 32px;
+    height: 32px;
+    background: url(../images/ico_shop_map.svg) no-repeat;
+}
+
+/* 매장 상담 예약 */
+.store-consulting {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.store-consulting> h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.store-consulting .reservation-type {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid var(--gray);
+    padding: 0 0 14px;
+    margin: 0 0 20px;
+    box-sizing: border-box;
+}
+
+.store-consulting .reservation-type .select {
+    margin: 0 35px 0 0;
+    color: var(--black);
+}
+
+.store-consulting .reservation-type a {
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--font-gray);
+}
+
+.store-consulting .reservation-type .select::after {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--black);
+}
+
+.store-consulting ol .step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 0 12px;
+}
+
+.store-consulting ol .step>div {
+    position: relative;
+    width: 450px;
+    height: 160px;
+    border: 1px solid var(--gray);
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 20px 0 26px;
+    color: var(--black);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.store-consulting ol .step>div .step-txt {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.store-consulting ol .step .step1>.ico-guide::after {
+    position: absolute;
+    right: 185px;
+    bottom: 0px;
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: url(../images/ico-res-guide-visit-01.svg) no-repeat;
+}
+
+.store-consulting ol .step .step2>.ico-guide::after {
+    position: absolute;
+    right: 185px;
+    bottom: 0px;
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: url(../images/ico-res-guide-visit-02.svg) no-repeat;
+}
+
+.store-consulting ol .step .step3>.ico-guide::after {
+    position: absolute;
+    right: 185px;
+    bottom: 0px;
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: url(../images/ico-res-guide-visit-03.svg) no-repeat;
+}
+
+/* STEP01 */
+.red {
+    color: var(--red);
+}
+
+.store-consulting .essential {
+    text-align: right;
+    font-size: 13px;
+}
+
+.store-consulting ol .step01 {
+    font-size: 15px;
+    color: var(--red);
+    font-weight: 700;
+    padding: 0 0 8px;
+    border-bottom: 1px solid var(--red);
+    margin: 0 0 25px;
+}
+
+.store-consulting ol .step03 {
+    margin: 44px 0 0;
+}
+
+.store-consulting .consulting-title {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 13px;
+    color: var(--gray2);
+    margin: 0 0 26px;
+}
+
+.store-consulting .consulting-title h4 {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.store-consulting ol li .consulting-type {
+    margin: 0 0 55px;
+}
+
+.store-consulting ol li .consulting-type .consulting-type-button {
+    display: inline-flex;
+    gap: 15px;
+}
+
+.store-consulting .consulting-type .btn-b,
+.btn-s {
+    width: 264px;
+    height: 80px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--black);
+    border: 1px solid var(--gray);
+    border-radius: 40px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    /* 클릭하면 빨간색으로  */
+}
+
+.store-consulting .consulting-type .consulting-type-button .btn-b::before {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 8px 0 0;
+    vertical-align: 5px;
+    content: "";
+    width: 48px;
+    height: 48px;
+}
+
+.store-consulting ol li .consulting-type .buy::before {
+    background: url(../images/ico_buy.svg) no-repeat;
+}
+
+.store-consulting ol li .consulting-type .wedding::before {
+    background: url(../images/ico_wedding.svg) no-repeat;
+}
+
+.store-consulting ol li .consulting-type .move::before {
+    background: url(../images/ico_move.svg) no-repeat;
+}
+
+.store-consulting ol li .consulting-type .buy::before {
+    background: url(../images/ico_buy.svg) no-repeat;
+}
+
+.store-consulting ol li .consulting-type .interior::before {
+    background: url(../images/ico_interior.svg) no-repeat;
+}
+
+.store-consulting .consulting-type-btn-s .btn-s {
+    text-align: center;
+    width: 220px;
+    height: 48px;
+}
+
+.store-consulting ol li .consulting-type .consulting-type-btn-s {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 0 55px;
+}
+
+.store-consulting ol li .consulting-type textarea::placeholder {
+    font-size: 16px;
+    color: var(--font-gray);
+
+}
+
+.store-consulting ol li .consulting-type textarea {
+    width: 1380px;
+    height: 140px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+    padding: 24px 24px;
+    box-sizing: border-box;
+}
+
+.store-consulting ol li .consulting-type .explanation {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 10px 0;
+    font-size: 13px;
+    color: var(--gray2);
+    margin: 0 0 80px;
+}
+
+.store-consulting .select-box {
+    padding: 0 16px;
+    width: 200px;
+    height: 48px;
+    border: 1px solid var(--gray);
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray2);
+    appearance: none;
+    background: url(../images/ico_arrow_down-black.svg) no-repeat right 16px bottom 20px;
+}
+
+.store-consulting .select-box::after {
+    display: flex;
+    content: "";
+    width: 12px;
+    height: 6px;
+}
+
+.consulting-type .map-bottom {
+    text-align: right;
+    margin: 20px 0 0;
+    font-size: 13px;
+    color: var(--gray2);
+}
+
+
+.store-consulting .consulting-type .map-bar-btn {
+    display: flex;
+    align-items: center;
+}
+
+.store-consulting .consulting-type .view-map::before {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: 8px;
+    margin: 0 10px 0 0;
+    width: 16px;
+    height: 23px;
+    content: "";
+    background: url(../images/ico-view-map_on.svg)no-repeat;
+}
+
+.store-consulting .consulting-type .view-map::after {
+    display: inline-block;
+    content: "";
+    height: 14px;
+    border-right: 1px solid var(--gray);
+    margin: 0 13px;
+}
+
+.store-consulting .consulting-type .view-map {
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.store-consulting .consulting-type .view-list::before {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: 7px;
+    margin: 0 10px 0 0;
+    width: 21px;
+    height: 16px;
+    content: "";
+    background: url(../images/ico-view-list_off.svg)no-repeat;
+}
+
+.view-list {
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.select-map .map-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 14px;
+}
+
+.select-map {
+    padding: 19px 19px;
+    border: 1px solid var(--black);
+    border-radius: 9px;
+    box-sizing: border-box;
+}
+
+.select-map .map .root_daum_roughmap {
+    text-align: center;
+    border: 1px solid var(--gray);
+    margin: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+/* 예약신청 */
+.step03 ul {
+    display: flex;
+}
+
+.step03 ul .step03-left .name {
+    margin: 20px 0 40px;
+}
+
+.step03 ul .step03-left {
+    font-size: 16px;
+    font-weight: 700;
+    width: 540px;
+    height: 348px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    margin: 0 32px 0 0;
+    padding: 56px 60px 72px;
+    box-sizing: border-box;
+}
+
+.step03 ul .step03-left input::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.step03 ul .step03-left input {
+    height: 48px;
+    width: 100%;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 0 16px 0;
+    margin: 20px 0 0;
+    box-sizing: border-box;
+}
+
+/* 수집동의 */
+.info-list input {
+    display: none;
+}
+
+.info-list input:checked+.chk-box {
+    background: url(../images/btn-checkbox-on.svg) no-repeat left center;
+}
+
+.info-list .chk-box {
+    padding: 0 0 0 23px;
+    background: url(../images/btn-checkbox-off.svg) no-repeat left center;
+}
+
+
+.overflow {
+    height: 90px;
+    border: 1px solid var(--gray);
+    border-radius: 9px;
+    padding: 16px 0 16px 16px;
+    line-height: 18px;
+    font-size: 12px;
+    color: var(--black);
+    margin: 11px 0 14px;
+    box-sizing: border-box;
+}
+
+.overflow>div {
+    overflow: auto;
+    height: 58px;
+}
+
+.overflow ol li .info-content {
+    margin: 0 0 0 10px;
+}
+
+.overflow ol li .info-content>b {
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--black)
+}
+
+.info-list {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.info-list .info-title {
+    margin: 0 0 22px;
+}
+
+.all-chk {
+    margin: 0 0 15px;
+}
+
+/* 케어십 상담 예약 1page */
+
+.middle {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.careship-top {
+    margin: 0 0 50px;
+}
+
+.gradation {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    height: 74px;
+    font-size: 16px;
+    color: var(--white);
+    margin: 0 0 76px;
+    background: linear-gradient(to right, #a58bee, #f86791);
+}
+
+.gradation .store-consulting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gradation .store-consulting button {
+    width: 90px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 20px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    background-color: transparent;
+}
+
+.gradation .store-consulting button::before {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: 5px;
+    margin: 0 5px 0 0;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/ico-reset-white.svg) no-repeat;
+}
+
+.consulting-reservation h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.consulting-reservation h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.consulting-reservation .step-num {
+    font-size: 22px;
+    margin: 0 0 45px;
+}
+
+.consulting-reservation .category {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.consulting-reservation .category .select {
+    margin: 45px 0 190px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.consulting-reservation .category .select>li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 327px;
+    height: 352px;
+    background-color: var(--white);
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    box-shadow: 2px 4px 16px 0 rgba(0, 0, 0, 0.14);
+}
+
+.consulting-reservation .category .select>li:hover .over-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.consulting-reservation .category .select .over-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 327px;
+    height: 352px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    display: none;
+}
+
+.consulting-reservation .category .select .category-name::after {
+    display: flex;
+    content: "";
+    width: 200px;
+    height: 200px;
+    margin: 30px 0 0;
+}
+
+.consulting-reservation .category .select .cate-img1-1::after {
+    background: url(../images/img-cate-water-01.png) no-repeat;
+}
+
+.consulting-reservation .category .select .cate-img1-2::after {
+    background: url(../images/img-cate-refrigerator-01.png) no-repeat;
+}
+
+.consulting-reservation .category .select .cate-img1-3::after {
+    background: url(../images/img-cate-dryer-01.png) no-repeat;
+}
+
+.consulting-reservation .category .select .cate-img1-4::after {
+    background: url(../images/img-cate-stove-01.png) no-repeat;
+}
+
+.consulting-reservation .category .select .cate-img1-5::after {
+    background: url(../images/img-cate-air-cleaner-01.png) no-repeat;
+}
+
+.consulting-reservation .category .select .cate-img1-6::after {
+    background: url(../images/img-cate-air-fan-01.png) no-repeat;
+}
+
+.consulting-reservation .category .select .cate-img1-7::after {
+    background: url(../images/img-cate-dish-washer-01.png) no-repeat;
+}
+
+.consulting-reservation .category .select .cate-img1-8::after {
+    background: url(../images/img-cate-lg-tiiun-01.png) no-repeat;
+}
+
+.consulting-reservation .category .select .category-name {
+    margin: 49px 0 0;
+}
+
+.consulting-reservation .category .select .over {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 327px;
+    margin: 49px 0 0;
+    color: var(--white);
+}
+
+.consulting-reservation .category .select .over .product {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.consulting-reservation .category .select .over .info {
+    font-size: 16px;
+}
+
+.consulting-reservation .category .select .button {
+    position: absolute;
+    left: 107px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: var(--white);
+    background: linear-gradient(280deg, #fb5a72, #fa263e);
+}
+
+.consulting-reservation .category .select .button:hover {
+    background: #fa263e;
+}
+
+/* 케어십 상담 예약 2page */
+.h2-none {
+    margin: 79px 0 0;
+}
+
+.gradation .store-consulting .arrow-right::after {
+    display: inline-flex;
+    align-items: center;
+    content: "";
+    margin: 0 14px 0;
+    vertical-align: 5px;
+    width: 24px;
+    height: 24px;
+    background: url(../images/ico_arrow_right_s.svg) no-repeat;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    padding: 23px;
+    border: 1px solid var(--footer-gray);
+    border-radius: 10px;
+}
+
+.store-consulting .video .video-title {
+    margin: 0 0 0 41px;
+}
+
+.store-consulting .video .video-title h2 {
+    text-align: left;
+
+}
+
+.care-info ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 42px 0 80px;
+}
+
+.care-info ul li {
+    display: flex;
+    text-align: left;
+    margin: 27px;
+    width: calc(50% - 54px);
+
+}
+
+.care-info ul li .bg::before {
+    display: flex;
+    content: "";
+    width: 96px;
+    height: 96px;
+}
+
+.care-info ul .care_1 .bg::before {
+    background: url(../images/ico-care-refrigerator.svg) no-repeat;
+}
+
+.care-info ul .care_2 .bg::before {
+    background: url(../images/ico-care-refrigerator-02.svg) no-repeat;
+}
+
+.care-info ul .care_3 .bg::before {
+    background: url(../images/ico-care-refrigerator-03.svg) no-repeat;
+}
+
+.product-list>h4 {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.consulting-reservation .product-list .detail-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    margin: 22px 0 0;
+}
+
+.consulting-reservation .product-list .detail-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.consulting-reservation .product-list .detail-list li>div {
+    background-color: var(--white);
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    width: 100%;
+    padding: 12px 40px 40px;
+    box-shadow: 2px 4px 16px 0 rgba(0, 0, 0, 0.14);
+    box-sizing: border-box;
+}
+
+.consulting-reservation .product-list .detail-list .product_13,
+.consulting-reservation .product-list .detail-list .product_14,
+.consulting-reservation .product-list .detail-list .product_15,
+.consulting-reservation .product-list .detail-list .product_16 {
+    display: none;
+}
+
+.product-list .detail-list li div>div {
+    font-size: 13px;
+    color: var(--font-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-list .detail-list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.product-list .detail-list a>div::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    content: "";
+    width: 226px;
+    height: 226px;
+}
+
+.product-list .detail-list .product_1 a>div::before {
+    background: url(../images/img_refrigerator_1.png) no-repeat;
+}
+
+.product-list .detail-list .product_2 a>div::before {
+    background: url(../images/img_refrigerator_2.png) no-repeat;
+}
+
+.product-list .detail-list .product_3 a>div::before {
+    background: url(../images/img_refrigerator_3.png) no-repeat;
+}
+
+.product-list .detail-list .product_4 a>div::before {
+    background: url(../images/img_refrigerator_4.png) no-repeat;
+}
+
+.product-list .detail-list .product_5 a>div::before {
+    background: url(../images/img_refrigerator_5.png) no-repeat;
+}
+
+.product-list .detail-list .product_6 a>div::before {
+    background: url(../images/img_refrigerator_6.png) no-repeat;
+}
+
+.product-list .detail-list .product_7 a>div::before {
+    background: url(../images/img_refrigerator_7.png) no-repeat;
+}
+
+.product-list .detail-list .product_8 a>div::before {
+    background: url(../images/img_refrigerator_8.png) no-repeat;
+}
+
+.product-list .detail-list .product_9 a>div::before {
+    background: url(../images/img_refrigerator_9.png) no-repeat;
+}
+
+.product-list .detail-list .product_10 a>div::before {
+    background: url(../images/img_refrigerator_10.png) no-repeat;
+}
+
+.product-list .detail-list .product_11 a>div::before {
+    background: url(../images/img_refrigerator_11.png) no-repeat;
+}
+
+.product-list .detail-list .product_12 a>div::before {
+    background: url(../images/img_refrigerator_12.png) no-repeat;
+}
+
+.product-list .detail-list .product_13 a>div::before {
+    background: url(../images/img_refrigerator_13.png) no-repeat;
+}
+
+.product-list .detail-list .product_14 a>div::before {
+    background: url(../images/img_refrigerator_14.png) no-repeat;
+}
+
+.product-list .detail-list .product_15 a>div::before {
+    background: url(../images/img_refrigerator_15.png) no-repeat;
+}
+
+.product-list .detail-list .product_16 a>div::before {
+    background: url(../images/img_refrigerator_16.png) no-repeat;
+}
+
+.product-list .detail-list .product-info {
+    font-size: 17px;
+    color: var(--black);
+}
+
+.product-list .detail-list .product-code {
+    font-size: 12px;
+    color: var(--font-gray);
+    margin: 0 0 23px;
+}
+
+.product-list .detail-list .visit-cycle {
+    padding: 0 12px 0;
+    height: 40px;
+    background: #ededed;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.product-list .detail-list .visit-cycle select {
+    background-color: #ededed;
+    border: none;
+    padding: 0 30px 0 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--l-black);
+}
+
+.product-list .detail-list .usefee {
+    margin: 30px 0 0;
+}
+
+.product-list .detail-list .usefee .monthly-fee {
+    font-size: 19px;
+    color: var(--black);
+}
+
+.view-more::before {
+    display: inline-flex;
+    content: "";
+    vertical-align: -2px;
+    width: 16px;
+    height: 16px;
+    margin: 0 7px 0 0;
+    background: url(../images/btn-plus-black.svg) no-repeat;
+}
+
+.view-more {
+    text-align: center;
+    margin: 32px 0 199px;
+    border: 1px solid var(--black);
+    border-radius: 25px;
+    background-color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    width: 92px;
+    height: 40px;
+    transition: .4s;
+    box-sizing: border-box;
+}
+
+.view-more:hover::before {
+    background: url(../images/btn-plus-white.svg) no-repeat;
+}
+
+.view-more:hover {
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+
+/* STRP 03 */
+
+.start-step3 {
+    border-bottom: 1px solid var(--black);
+    margin: 0 0 25px;
+}
+
+.start-step3 p {
+    margin: 0 0 15px;
+    font-size: 13px;
+}
+
+.map .side-box {
+    position: absolute;
+    left: 0;
+    top:0;
+    display: flex;
+    z-index: 20;
+    width: 290px;
+}
+
+.map .side-box>button {
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    right: 0;
+    top: 180px;
+    border-radius: 0 8px 8px 0;
+    background-color: var(--gray);
+    box-shadow: 3px 0 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.map .side-box>button::after {
+    display: flex;
+    content: "";
+    width: 10px;
+    height: 18px;
+    margin: 0 0 0 15px;
+    background: url(../images/ico-carousel-btn.svg)no-repeat;
+}
+
+.map .side-box .side-btn-box {
+    width: 250px;
+    height: 492px;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.16);
+
+}
+
+.map .side-box .side-btn-box ul {
+    padding: 54px 0 0;
+}
+
+.map .side-box .side-btn-box ul li {
+    position: relative;
+}
+
+.map .side-box .side-btn-box ul li .map-select {
+    color: var(--red);
+}
+
+.map .side-box .side-btn-box ul li .map-select::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 0;
+    background-color: var(--red);
+}
+/* .map .side-box .side-btn-box ul li button:active {
+    color: var(--red);
+}
+
+.map .side-box .side-btn-box ul li button:active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 0;
+    background-color: var(--red);
+} */
+
+.map .side-box .side-btn-box ul li button {
+    width: 100%;
+    padding: 15px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    background-color: transparent;
+}
+
+.reservation-info {
+    width: 100%;
+    height: 130px;
+    border-radius: 9px;
+    font-size: 19px;
+    color: var(--white);
+    padding: 34px 50px;
+    background: linear-gradient(to right, #a58bee, #f86791);
+    box-sizing: border-box;
+    margin: 0 0 137px;
+}
+
+.reservation-info .store-name {
+    margin: 0 0 6px;
+}
+
+.bottom-area h4 {
+    font-size: 16px;
+    color: var(--black);
+}
+
+.bottom-area p {
+    font-size: 13px;
+    color: var(--black);
+    margin: 15px 0 0;
+}
+
+.bottom-area table {
+    margin: 19px 0 50px;
+    border-collapse: collapse;
+    font-size: 13px;
+    color: var(--black);
+    text-align: center;
+}
+
+.bottom-area table tr {
+    height: 40px;
+}
+
+.bottom-area table th {
+    font-weight: 400;
+}
+
+.bottom-area table .table-right {
+    border-left: 1px solid var(--gray);
+}
+
+.bottom-area table thead {
+    border-top: 1px solid var(--gray2);
+    border-bottom: 1px solid var(--gray);
+}
+
+.bottom-area table tbody tr {
+    border-bottom: 1px solid var(--gray);
+}
+
+.btn-res-care {
+    text-align: center;
+    margin: 0 0 90px;
+}
+
+.btn-res-care button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 206px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: var(--white);
+    background: linear-gradient(280deg, #fb5a72, #fa263e);
+}
+
+.btn-res-care button:hover {
+    background: #fa263e;
+}
+
+.care-notice h4 {
+    margin: 0 0 6px;
+}
+
+.care-notice {
+    padding: 42px 40px;
+    border-radius: 8px;
+    height: 178px;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 22px;
+    background-color: var(--bg-footer);
+    box-sizing: border-box;
+    margin: 0 0 148px;
+}
+
+
+
+
+
+.story-list .swiper-slide-next ,
+.story-list .swiper-slide-prev,
+.story-list .swiper-slide,
+.banner-swiper .swiper-slide-next ,
+.banner-swiper .swiper-slide-prev {
+    opacity: 0.6;
+    scale: 0.8;
+}
+.story-list .swiper-slide-active{
+    opacity: 1;
+    scale: 1;
+}
+
+ .swiper-button-next:after, .swiper-button-prev:after {
+    color: var(--l-black);
+}
+
+.btn-pause{
+    width: 30px;
+    height: 30px;
+    background: url(../images/ico_pause.svg) no-repeat center / contain;
+}
+.btn-start{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/ico_play.svg) no-repeat center / contain;
+}
+
+.control-box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 17%;
+    bottom: -56px;
+    z-index: 100;
+}
+
+.swiper-pagination.story-pagination{
+    position: static;
+    text-align: left;
+}
+
+.story-list .swiper-wrapper{
+    height: 80%;
+}
+
+
+
+.hover {
+    position: absolute;
+	display: inline-flex;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+}
+
+
+span.left {
+    left: -10px;
+}
+span.right {
+    right: -10px;
+}
+b.click {
+    left: 46%;
+}
+.click {
+    position: absolute;
+	display: inline-flex;
+	width: 1rem;
+	height: 1rem;
+border-radius: 100%;
+}
+.link {
+    position: absolute;
+	display: inline-flex;
+	width: 1rem;
+	height: 1rem;
+border-radius: 100%;
+}
+
+.hover {
+	animation: hover 2s ease infinite;
+	-moz-animation: hover 2s ease infinite;
+	-webkit-animation: hover 2s ease infinite;
+}
+
+@keyframes hover {
+	0%,
+	100% {
+		
+			background-color: #FED128;
+	}
+	50% {
+		
+			background-color: #806914;
+	}
+}
+
+.click {
+	animation: click 2s linear infinite;
+	-moz-animation: click 2s linear infinite;
+	-webkit-animation: click 2s linear infinite;
+	-o-animation: click 2s linear infinite;
+}
+
+@keyframes click {
+	0%,
+	100% {
+			
+			background-color: #28D7FE;
+	}
+	50% {
+			
+			background-color: #146C80;
+	}
+}
+.link {
+	animation: link 2s linear infinite;
+	-moz-animation: link 2s linear infinite;
+	-webkit-animation: link 2s linear infinite;
+	-o-animation: link 2s linear infinite;
+}
+
+@keyframes link {
+	0%,
+	100% {
+			
+			background-color: #fe2828;
+	}
+	50% {
+			
+			background-color: #801414;
+	}
+}

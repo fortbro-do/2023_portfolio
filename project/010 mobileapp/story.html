@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스토리 / 밀리의서재</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/default.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="fixed-top">
+            <h1 class="logo">
+                <img src="images/img_logo.png" alt="millie">
+            </h1>
+            <h2 class="hide">상단메뉴</h2>
+            <nav class="header__top">
+                <ul class="header__nav__btn">
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html">NOW</a> <span class="link"></span></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/story.html" class="header__nav__btn--active">스토리</a> <span class="link"></span></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/millie-road-recomand.html">밀리로드</a> <span class="link"></span></li>
+                </ul>
+            </nav>
+        </div>
+        <h2 class="hide">하단메뉴</h2>
+        <nav class="header-bottom fixed-bottom">
+            <ul class="nav-buttom">
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html" class="btn-today nav-buttom--active">투데이</a><span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html" class="brn-feed">피드</a><span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/search.html" class="btn-search">검색</a><span class="link"></span></li>
+                <li><a href="#none" class="btn-mylibrary">내서재</a></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/account-management.html" class="btn-management">관리</a><span class="link"></span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="hide">메인배너</h2>
+            <div class="relative">
+                <div class="swiper  story-banner">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide"> <a href="#none" class="banner-link">
+                        <div class="banner1">
+                            <div>
+                            <div>
+                              <span class="sticker">NEW</span>
+                              <p class="banner-txt">마나가 결핍된 마법사 지망생 <br> 마나를 저장해주는 통장을 얻다
+                              </p>
+                            </div>
+                        </div>
+                        </div>
+                      </a></li>
+                      <li class="swiper-slide">
+                          <a href="#none" class="banner-link">
+                        <div class="banner1">
+                            <div>
+                            <div>
+                              <span class="sticker">NEW</span>
+                              <p class="banner-txt">마나가 결핍된 마법사 지망생 <br> 마나를 저장해주는 통장을 얻다
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#none" class="banner-link">
+                            <div class="banner1">
+                          <div>
+                              <div>
+                              <span class="sticker">NEW</span>
+                              <p class="banner-txt">마나가 결핍된 마법사 지망생 <br> 마나를 저장해주는 통장을 얻다
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#none" class="banner-link">
+                        <div class="banner1">
+                          <div>
+                            <div>
+                              <span class="sticker">NEW</span>
+                              <p class="banner-txt">마나가 결핍된 마법사 지망생 <br> 마나를 저장해주는 통장을 얻다
+                              </p>
+                            </div>
+                        </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="banner__control-box">
+                    <div class="banner__play-bar">
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 100 10">
+                            <line x1="0" y1="0" x2="100" y2="0">
+                        </svg>
+                    </div>
+                    </div>
+                    <div class="banner__btn-box">
+                      <div class="swiper-pagination banner__num"></div>
+                      <button class="btn-play"><span class="hide">재생</span>
+                     <span class="click"></span>
+                    </button>
+                      <button class="btn-pause "><span class="hide">정지</span>
+                     <span class="click"></span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section>
+            <h2 class="hide">판타지무협 순위</h2>
+            <div class="category-btn-type1 mt39 mobile-space">
+                <ul>
+                    <li><button>로맨스/BL</button></li>
+                    <li><button class="select">판타지/무협</button></li>
+                    <li><button>일반소설</button></li>
+                </ul>
+            </div>
+            <div class="story-slide mt16 relative">
+                <button class="arrow-left"><span class="hide">이전</span> 
+                    <span class="click"></span>
+                </button>
+                <button class="arrow-right"><span class="hide">다음</span> 
+                    <span class="click"></span>
+                </button>
+                <div class="card-list-type8 mt15">
+                    <div class="swiper swiper-list">
+                        <ul class="swiper-wrapper book-list   ">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>8</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="book-list__title txt-center">난세에 환생한 치트급 랭커</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer txt-center">시준</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>8</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="book-list__title txt-center">난세에 환생한 치트급 랭커</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer txt-center">시준</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>8</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="book-list__title txt-center">난세에 환생한 치트급 랭커</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer txt-center">시준</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>8</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="book-list__title txt-center">난세에 환생한 치트급 랭커</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer txt-center">시준</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>8</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="book-list__title txt-center">난세에 환생한 치트급 랭커</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer txt-center">시준</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>8</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="book-list__title txt-center">난세에 환생한 치트급 랭커</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer txt-center">시준</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>8</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="book-list__title txt-center">난세에 환생한 치트급 랭커</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer txt-center">시준</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>8</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="book-list__title txt-center">난세에 환생한 치트급 랭커</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer txt-center">시준</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>8</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="book-list__title txt-center">난세에 환생한 치트급 랭커</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer txt-center">시준</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>8</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="book-list__title txt-center">난세에 환생한 치트급 랭커</p>
+                                        <div class="book-list__info">
+                                            <p class="book-list__writer txt-center">시준</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="hotkeyword">
+                    <div>
+                        <p class="ico-hotkeyword">급상승</p>
+                        <b class="hotkeyword__rank">1</b>
+                        <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                    </div>
+                    <button class="more-rank">
+                        <span class="hide">순위펼침</span>
+                        <span class="click"></span>
+                    </button>
+                </div>
+                <div class="rank-view mobile-space ">
+                    <div class="swiper rank-view-slide">
+                        <ol class="swiper-wrapper">
+                            <li class="swiper-slide rank-swiper">
+                                <b class="hotkeyword__rank">1</b>
+                                <div>
+                                    <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                                    <p class="book-detail">시준 <span class="line"></span> 총 8권</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide rank-swiper">
+                                <b class="hotkeyword__rank">2</b>
+                                <div>
+                                    <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                                    <p class="book-detail">시준 <span class="line"></span> 총 8권</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide rank-swiper">
+                                <b class="hotkeyword__rank">3</b>
+                                <div>
+                                    <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                                    <p class="book-detail">시준 <span class="line"></span> 총 8권</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide rank-swiper">
+                                <b class="hotkeyword__rank">4</b>
+                                <div>
+                                    <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                                    <p class="book-detail">시준 <span class="line"></span> 총 8권</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide rank-swiper">
+                                <b class="hotkeyword__rank">5</b>
+                                <div>
+                                    <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                                    <p class="book-detail">시준 <span class="line"></span> 총 8권</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide rank-swiper">
+                                <b class="hotkeyword__rank">6</b>
+                                <div>
+                                    <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                                    <p class="book-detail">시준 <span class="line"></span> 총 8권</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide rank-swiper">
+                                <b class="hotkeyword__rank">7</b>
+                                <div>
+                                    <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                                    <p class="book-detail">시준 <span class="line"></span> 총 8권</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide rank-swiper">
+                                <b class="hotkeyword__rank">8</b>
+                                <div>
+                                    <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                                    <p class="book-detail">시준 <span class="line"></span> 총 8권</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide rank-swiper">
+                                <b class="hotkeyword__rank">9</b>
+                                <div>
+                                    <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                                    <p class="book-detail">시준 <span class="line"></span> 총 8권</p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide rank-swiper">
+                                <b class="hotkeyword__rank">10</b>
+                                <div>
+                                    <p class="hotkeyword__book-title">난세에 환생한 치트급 랭커</p>
+                                    <p class="book-detail">시준 <span class="line"></span> 총 8권</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="swiper-pagination dot">
+                        <ol class="rank-page">
+                            <li class="dot-select"><button></button></li>
+                            <li class="dot"><button></button></li>
+                        </ol>
+                    </div>
+                </div>
+        </section>
+        <div class="mobile-space">
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>판타지/무협 <span class="hide">자세히보기</span>
+                        </h2><br><span></span>
+                    </a>
+                    <div class="period-select">
+                        <button class="btn-sort-date">일주일간 <span class="click"></span></button>
+                        <p>가장 많이 읽힌 책</p>
+                    </div>
+                    <div>
+                        <div class="sort-date">
+                            <div class="cover-menu">
+                                <div class="btn-box-top">
+                                    <p class="sort-popup__title">조회기간</p>
+                                    <div>
+                                        <ul class="sort-list sort-list-date">
+                                            <li><button>일주일간</button></li>
+                                            <li><button>한달간</button></li>
+                                            <li><button>일년간</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-box-bottom">
+                                    <button class="cancel">닫기</button>
+                                    <button class="check">적용하기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dimed"></div>
+                </div>
+                <div class="story-rank">
+                    <div class="card-list-type10 mt15">
+                        <div class="swiper story-rank__list">
+                            <ol class="swiper-wrapper slide-list">
+                                <li class="swiper-slide">
+                                    <a href="#none">
+                                        <div class="story-rank__info">
+                                            <div class="book-list__img1 relative">
+                                                <div class="book-list__badge1 pdf"></div>
+                                                <div class="book-list__badge2 pdf hide"></div>
+                                            </div>
+                                            <div>
+                                                <p class="story-rank__rank">1</p>
+                                                <p class="book-list__title">검사님의 사건 파일</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">달빛물든</p>
+                                                </div>
+                                                <div class="book-list__bottom">
+                                                    <p class="book-list__time">83% <span class="line"></span> 151분</p>
+                                                    <span class="red">25 ▲</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#none">
+                                        <div class="story-rank__info">
+                                            <div class="book-list__img1 relative">
+                                                <div class="book-list__badge1 pdf"></div>
+                                                <div class="book-list__badge2 pdf hide"></div>
+                                            </div>
+                                            <div>
+                                                <p class="story-rank__rank">2</p>
+                                                <p class="book-list__title">검사님의 사건 파일</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">달빛물든</p>
+                                                </div>
+                                                <div class="book-list__bottom">
+                                                    <p class="book-list__time">83% <span class="line"></span> 151분</p>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#none">
+                                        <div class="story-rank__info">
+                                            <div class="book-list__img1 relative">
+                                                <div class="book-list__badge1 pdf"></div>
+                                                <div class="book-list__badge2 pdf hide"></div>
+                                            </div>
+                                            <div>
+                                                <p class="story-rank__rank">3</p>
+                                                <p class="book-list__title">검사님의 사건 파일</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">달빛물든</p>
+                                                </div>
+                                                <div class="book-list__bottom">
+                                                    <p class="book-list__time">83% <span class="line"></span> 151분</p>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#none">
+                                        <div class="story-rank__info">
+                                            <div class="book-list__img1 relative">
+                                                <div class="book-list__badge1 pdf"></div>
+                                                <div class="book-list__badge2 pdf hide"></div>
+                                            </div>
+                                            <div>
+                                                <p class="story-rank__rank">4</p>
+                                                <p class="book-list__title">검사님의 사건 파일</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">달빛물든</p>
+                                                </div>
+                                                <div class="book-list__bottom">
+                                                    <p class="book-list__time">83% <span class="line"></span> 151분</p>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#none">
+                                        <div class="story-rank__info">
+                                            <div class="book-list__img1 relative">
+                                                <div class="book-list__badge1 pdf"></div>
+                                                <div class="book-list__badge2 pdf hide"></div>
+                                            </div>
+                                            <div>
+                                                <p class="story-rank__rank">5</p>
+                                                <p class="book-list__title">검사님의 사건 파일</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">달빛물든</p>
+                                                </div>
+                                                <div class="book-list__bottom">
+                                                    <p class="book-list__time">83% <span class="line"></span> 151분</p>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#none">
+                                        <div class="story-rank__info">
+                                            <div class="book-list__img1 relative">
+                                                <div class="book-list__badge1 pdf"></div>
+                                                <div class="book-list__badge2 pdf hide"></div>
+                                            </div>
+                                            <div>
+                                                <p class="story-rank__rank">6</p>
+                                                <p class="book-list__title">검사님의 사건 파일</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">달빛물든</p>
+                                                </div>
+                                                <div class="book-list__bottom">
+                                                    <p class="book-list__time">83% <span class="line"></span> 151분</p>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#none">
+                                        <div class="story-rank__info">
+                                            <div class="book-list__img1 relative">
+                                                <div class="book-list__badge1 pdf"></div>
+                                                <div class="book-list__badge2 pdf hide"></div>
+                                            </div>
+                                            <div>
+                                                <p class="story-rank__rank">7</p>
+                                                <p class="book-list__title">검사님의 사건 파일</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">달빛물든</p>
+                                                </div>
+                                                <div class="book-list__bottom">
+                                                    <p class="book-list__time">83% <span class="line"></span> 151분</p>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#none">
+                                        <div class="story-rank__info">
+                                            <div class="book-list__img1 relative">
+                                                <div class="book-list__badge1 pdf"></div>
+                                                <div class="book-list__badge2 pdf hide"></div>
+                                            </div>
+                                            <div>
+                                                <p class="story-rank__rank">8</p>
+                                                <p class="book-list__title">검사님의 사건 파일</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">달빛물든</p>
+                                                </div>
+                                                <div class="book-list__bottom">
+                                                    <p class="book-list__time">83% <span class="line"></span> 151분</p>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#none">
+                                        <div class="story-rank__info">
+                                            <div class="book-list__img1 relative">
+                                                <div class="book-list__badge1 pdf"></div>
+                                                <div class="book-list__badge2 pdf hide"></div>
+                                            </div>
+                                            <div>
+                                                <p class="story-rank__rank">9</p>
+                                                <p class="book-list__title">검사님의 사건 파일</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">달빛물든</p>
+                                                </div>
+                                                <div class="book-list__bottom">
+                                                    <p class="book-list__time">83% <span class="line"></span> 151분</p>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#none">
+                                        <div class="story-rank__info">
+                                            <div class="book-list__img1 relative">
+                                                <div class="book-list__badge1 pdf"></div>
+                                                <div class="book-list__badge2 pdf hide"></div>
+                                            </div>
+                                            <div>
+                                                <p class="story-rank__rank">10</p>
+                                                <p class="book-list__title">검사님의 사건 파일</p>
+                                                <div class="book-list__info">
+                                                    <p class="book-list__writer">달빛물든</p>
+                                                </div>
+                                                <div class="book-list__bottom">
+                                                    <p class="book-list__time">83% <span class="line"></span> 151분</p>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>커밍순, 놓치기 아쉬운 책 <span class="hide">자세히보기</span></h2><span></span>
+                        <p></p>
+                    </a>
+                </div>
+                <div class="card-list-type8 mt15">
+                    <div class="swiper coming-book ">
+                        <ul class="book-list  swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>2</strong>권</span>
+                                        </div>
+                                        <div class="d-day">
+                                            <p class="open">OPEN</p>
+                                            <div class="day">D-1</div>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                    </div>
+                                </a>
+                                <button class="open-alram">알림 받기</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>2</strong>권</span>
+                                        </div>
+                                        <div class="d-day">
+                                            <p class="open">OPEN</p>
+                                            <div class="day">D-2</div>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                    </div>
+                                </a>
+                                <button class="open-alram">알림 받기</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>2</strong>권</span>
+                                        </div>
+                                        <div class="d-day">
+                                            <p class="open">OPEN</p>
+                                            <div class="day">D-2</div>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                    </div>
+                                </a>
+                                <button class="open-alram">알림 받기</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>2</strong>권</span>
+                                        </div>
+                                        <div class="d-day">
+                                            <p class="open">OPEN</p>
+                                            <div class="day">D-4</div>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                    </div>
+                                </a>
+                                <button class="open-alram">알림 받기</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>2</strong>권</span>
+                                        </div>
+                                        <div class="d-day">
+                                            <p class="open">OPEN</p>
+                                            <div class="day">D-4</div>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                    </div>
+                                </a>
+                                <button class="open-alram">알림 받기</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>2</strong>권</span>
+                                        </div>
+                                        <div class="d-day">
+                                            <p class="open">OPEN</p>
+                                            <div class="day">D-6</div>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                    </div>
+                                </a>
+                                <button class="open-alram">알림 받기</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>추천 베스트<span class="hide">자세히보기</span></h2><span></span>
+                        <p></p>
+                    </a>
+                </div>
+                <div class="card-list-type8 mt15">
+                    <div class="swiper basic-slide ">
+                        <ul class="book-list  swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>6</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>#초심자를 위한 판타지<span class="hide">자세히보기</span></h2><span></span>
+                        <p></p>
+                    </a>
+                </div>
+                <div class="card-list-type8 mt15">
+                    <div class="swiper basic-slide ">
+                        <ul class="book-list  swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>6</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>[전쟁/대체역사]<span class="hide">자세히보기</span></h2><span></span>
+                        <p></p>
+                    </a>
+                </div>
+                <div class="card-list-type8 mt15">
+                    <div class="swiper basic-slide ">
+                        <ul class="  swiper-wrapper book-list">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>6</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>[라이트노벨]<span class="hide">자세히보기</span></h2><span></span>
+                        <p></p>
+                    </a>
+                </div>
+                <div class="card-list-type8">
+                    <div class="swiper basic-slide mt15">
+                        <ul class="book-list  swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>6</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#none">
+                                    <div class="book-list__img1 relative">
+                                        <div class="book-list__badge1 story-badge"><span><strong>12</strong>권</span>
+                                        </div>
+                                    </div>
+                                    <p class="book-list__title">백작가 도련님이 괴담을 소환함</p>
+                                    <div class="book-list__info">
+                                        <p class="book-list__writer">노는새</p>
+                                        <p class="book-list__time">79% <span class="line"></span> 53분</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title-link">
+                    <a href="#none">
+                        <h2>판타지/무협 추천 작가</h2><span></span>
+                        <p></p>
+                    </a>
+                </div>
+                <div class="recommand-writer">
+                    <p><b>이영도</b> 드래곤라자, 퓨처워커, 폴라리스 랩소디</p>
+                    <p><b>톨킨</b>호빗, 반지의 제왕</p>
+                    <p><b>김용</b> 사조영웅전, 소오강호, 천룡팔부, 녹정기</p>
+                    <p><b>이우혁</b> 퇴마록, 치루천왕기, 왜란종결자</p>
+                </div>
+            </section>
+            <div>
+                <a href="#none" class="close-time">
+                    <span>
+                        <b>마감임박</b>
+                        <i>서비스 종료 예정 도서 모아보기</i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="notice">
+            <a href="#none">[공지-완료]LG U+ 휴대폰 본잉인증 오류 안내_06/02</a>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <h2>(주) 밀리의 서재</h2>
+                <ul class="sns-link">
+                    <li>
+                        <a href="#none" class="insta"><span class="hide">인스타그램</span></a>
+                    </li>
+                    <li>
+                        <a href="#none" class="youtube"><span class="hide">유튜브</span></a>
+                    </li>
+                    <li>
+                        <a href="#none" class="kakao"><span class="hide">카카오톡</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h2 class="hide">사업자정보</h2>
+                <button>사업자 정보 펼쳐보기
+                    <span class="click"></span>
+                </button>
+                <div class="footer-drop ">
+                    <h2 class="hide">회사정보</h2>
+                    <div>대표이사 : 서영택<span></span><span></span>사업자등록번호 : 423-88-00370<span></span>호스팅 제공자 : (주)밀리의 서재
+                    </div>
+                    <ul>
+                        <li>통신판매업 신고번호 : 2016-서울마포-2012호<br>
+                            <span></span>주소 : 서울특별시 마포구 양화로 45,16층 (메세나폴리스 세아타워)
+                        </li>
+                        <li>개인정보보호 책임자 : 방은혜(pb@millie.twon)<br><span></span> 제휴 문의 : business@millie.twon</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="hide">이용약관 및 기타정보</h2>
+            <nav>
+                <ul class="footer__info">
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#none">청소년보호정책</a></li>
+                    <li><a href="#none">고객센터</a></li>
+                    <li><a href="#none">환불신청</a></li>
+                    <li><a href="#none">B2B 문의</a></li>
+                    <li><a href="#none">콘텐츠 제휴문의</a></li>
+                    <li><a href="#none">저작권/도서오류 신고</a></li>
+                    <li><a href="#none">뷰어 다운로드</a></li>
+                    <li><a href="#none">종료 예정 도서</a></li>
+                    <li><a href="#none">회사 소개</a></li>
+                </ul>
+            </nav>
+            <p class="copy">Coptright © 2022밀리의 서재 All Rights Reserved.</p>
+        </footer>
+    </main>
+</body>
+
+</html>

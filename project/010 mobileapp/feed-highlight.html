@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피드-하이라이트 / 밀리의서재</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/default.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="fixed-top">
+            <h1 class="logo">
+                <img src="images/img_logo.png" alt="millie">
+            </h1>
+            <h2 class="none">상단메뉴</h2>
+            <nav class="header__top  none">
+                <ul class="header__nav__btn">
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html">NOW</a></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/story.html">스토리</a></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/millie-road-recomand.html" class="header__nav__btn--active">밀리로드</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="header-bottom fixed-bottom">
+            <ul class="nav-buttom">
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/index.html" class="btn-today ">투데이</a><span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html" class="brn-feed nav-buttom--active">피드</a><span class="link"></span></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/search.html" class="btn-search">검색</a><span class="link"></span></li>
+                <li><a href="" class="btn-mylibrary">내서재</a></li>
+                <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/account-management.html" class="btn-management">관리</a><span class="link"></span></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mobile-space">
+        <section>
+            <h2 class="hide">추천</h2>
+            <div class="category-btn-type4  mt48">
+                <ul>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html" class="active">추천</a><span class="link"></span></li>
+                    <li><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-following.html">팔로잉</a><span class="link"></span></li>
+                </ul>
+                <button class="write-btn"></button>
+            </div>
+        </section>
+        <section style="
+        margin-bottom: 7rem;">
+            <h3 class="hide">하이라이트</h3>
+            <div class="category-btn-type3 mt34">
+                <ul>
+                    <li><span class="link"></span><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-entire.html">전체</a></li>
+                    <li><a href="#none">포스트</a></li>
+                    <li><a href="#none">한 줄 리뷰</a></li>
+                    <li><span class="link"></span><a href="http://doyoung.dothome.co.kr/010%20mobileapp/feed-highlight.html" class="select">하이라이트</a></li>
+                </ul>
+            </div>
+            <div class="feed-all mt15">
+                <ul>
+                    <li class="card-list-type13">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <button class="btn_more-menu"><span class="hide">옵션더보기</span></button>
+                        </div>
+                        <div class="middle-content">
+                            <div class="bg-box">
+                            </div>
+                            <div class="book-comment txt-center">
+                                <div></div>
+                                <p class="book-title">주식 매매하는 법</p>
+                                <p>제시리버모어 지음, 박성환 옮김</p>
+                                <p>"하지만 나는 거래할 때 오랜 기간동안의" <br>내 자신의 경험을 따라야만 한다네.</p>
+                            </div>
+                        </div>
+                        <div class="bottom-bar">
+                            <p>이 한 줄 리뷰가 마음에 드시나요?</p>
+                            <div>
+                                <button class="btn_add-book">담기</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-list-type13">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn_follow">팔로우</button>
+                            <button class="btn_more-menu"><span class="hide">옵션더보기</span></button>
+                        </div>
+                        <div class="middle-content">
+                            <div class="bg-box">
+                            </div>
+                            <div class="book-comment txt-center">
+                                <div></div>
+                                <p class="book-title">주식 매매하는 법</p>
+                                <p>제시리버모어 지음, 박성환 옮김</p>
+                                <p>"하지만 나는 거래할 때 오랜 기간동안의" <br>내 자신의 경험을 따라야만 한다네.</p>
+                            </div>
+                        </div>
+                        <div class="bottom-bar">
+                            <p>이 한 줄 리뷰가 마음에 드시나요?</p>
+                            <div>
+                                <button class="btn_add-book">담기</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-list-type13">
+                        <div class="top-bar">
+                            <a href="#none">
+                                <div class="profile">
+                                    <span></span>
+                                    <div>
+                                        <p class="id">아이디</p>
+                                        <p>하이라이트 · 5시간 전</p>
+                                    </div>
+                                </div>
+                            </a>
+                                <button class="btn_follow">팔로우</button>
+                                <button class="btn_more-menu"><span class="hide">옵션더보기</span></button>
+                            </div>
+                        <div class="middle-content">
+                            <div class="bg-box">
+                            </div>
+                            <div class="book-comment txt-center">
+                                <div></div>
+                                <p class="book-title">주식 매매하는 법</p>
+                                <p>제시리버모어 지음, 박성환 옮김</p>
+                                <p>"하지만 나는 거래할 때 오랜 기간동안의" <br>내 자신의 경험을 따라야만 한다네.</p>
+                            </div>
+                        </div>
+                        <div class="bottom-bar">
+                            <p>이 한 줄 리뷰가 마음에 드시나요?</p>
+                            <div>
+                                <button class="btn_add-book">담기</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
