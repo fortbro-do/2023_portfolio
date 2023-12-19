@@ -68,12 +68,12 @@ $(function () {
     function openProject() {
       const index = $(this).index();
       console.log(index);
-      $(window).scroll(function () {
-        let scrollValue = $(document).scrollTop();
-        console.log(scrollValue);
-        $(window).scrollTop(scrollValue);
+      // $(window).scroll(function () {
+      //   let scrollValue = $(document).scrollTop();
+      //   console.log(scrollValue);
+      //   $(window).scrollTop(scrollValue);
 
-      });
+      // });
       // 클릭 시 스크롤 고정 
 
       $('.detail-page').stop().fadeIn();
