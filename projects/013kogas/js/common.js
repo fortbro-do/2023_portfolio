@@ -150,7 +150,7 @@ $(function () {
   $(window).on('resize load',getResize);
   function getResize(){
     let windowSize = $(window).width();
-    console.log(windowSize);
+    // console.log(windowSize);
      if(windowSize > 501){
       const swiper = new Swiper('.quick-menu__slide',{
         slidesPerView: 5,
