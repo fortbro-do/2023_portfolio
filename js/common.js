@@ -67,7 +67,7 @@ $(function () {
     projectList.on('click', openProject);
     function openProject() {
       const index = $(this).index();
-      console.log(index);
+      // console.log(index);
       // $(window).scroll(function () {
       //   let scrollValue = $(document).scrollTop();
       //   console.log(scrollValue);
